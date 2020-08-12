@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'AvenirNextCyr_Light';
+  src: url('AvenirNextCyr-Light.eot');
+  src: local('Avenir Next Cyr Light'), local('AvenirNextCyr-Light'), url('../libs/fonts/AvenirNextCyr-Light.eot?#iefix') format('embedded-opentype'), url('../libs/fonts/AvenirNextCyr-Light.woff') format('woff'), url('../libs/fonts/AvenirNextCyr-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvenirNextCyr_Demi';
+  src: url('AvenirNextCyr-Demi.eot');
+  src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'), url('../libs/fonts/AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'), url('../libs/fonts/AvenirNextCyr-Demi.woff') format('woff'), url('../libs/fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvenirNextCyr_Med';
+  src: url('AvenirNextCyr-Medium.eot');
+  src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'), url('../libs/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('../libs/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('../libs/fonts/AvenirNextCyr-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvenirNextCyr_Reg';
+  src: url('AvenirNextCyr-Regular.eot');
+  src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'), url('../libs/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('../libs/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('../libs/fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AvenirNextCyr_Bold';
+  src: url('AvenirNextCyr-Bold.eot');
+  src: local('Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'), url('../libs/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('../libs/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('../libs/fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+body {
+  font-family: 'AvenirNextCyr_Reg', sans-serif;
+  background-color: #242221;
+  color: #fff;
+}
