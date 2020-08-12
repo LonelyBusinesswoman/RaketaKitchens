@@ -1,0 +1,9 @@
+@media (max-width: 760px) {
+  header nav,
+  header .tour {
+    display: none;
+  }
+  header .mobile_menu {
+    display: flex;
+  }
+}

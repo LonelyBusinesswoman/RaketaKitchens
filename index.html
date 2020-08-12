@@ -9,15 +9,172 @@
 	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
     <!-- CSS style -->
     <link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css?v=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=1">
+    <link rel="stylesheet" type="text/css" href="css/adapt.css">
+    
 </head>
 <body>
-    hello
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <img src="img/Logo.svg" alt="logo">
+        </div>
+        <!-- nav -->
+        <nav>
+            <ul>
+                <li><a href="#">Smart kitchens</a></li>
+                <li><a href="#">Delivery-only</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+        <div class="tour">
+            <a href="#">View a tour</a>
+            <img src="img/CircleText.svg" alt="text">
+        </div>
+        <!-- Burger -->
+        <div class="mobile_menu">
+			<div class="burg"></div>
+			<div class="burg"></div>
+			<div class="burg"></div>
+		</div>
+    </header>
+	<!-- mobile nav-->
+	<section class="mobile">
+		<div class="wrap">
+			<div class="close_mob_menu">
+				<img src="img/cross.svg" alt="cross">
+			</div>
+			<ul>
+                <li><a href="#">Smart kitchens</a></li>
+                <li><a href="#">Delivery-only</a></li>
+                <li><a href="#">Our Partners</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+		</div>
+    </section>
+    <!-- FIRST screen -->
+    <div class="first_screen screen">
+        <div class="socials_block">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <!-- get started -->
+        <div class="get_started_block container">
+            <div class="welcome_block">
+                <p>Welcome</p>
+            </div>
+            <div class="start">
+                <div class="start_wrap">
+                    <p class="delivery_text">Delivery kitchens</p>
+
+                    <h1>A turnkey solution for <span>delivery-only</span> restaurant</h1>
+                
+                    <a href="#" class="action_btn orange_btn">
+                        <p>get started</p>
+                        <i class="fas fa-caret-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="languages_block">
+            <ul>
+                <li><a href="#" class="active">EN</a></li>
+                <li><a href="#">RU</a></li>
+                <li><a href="#">UA</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- SECOND screen-->
+    <div class="second_screen screen">
+        <!-- mint img -->
+        <img src="img/mint.png" class="mint_back" alt="back">
+        <!-- strawberry img -->
+        <img src="img/strawberry.png" class="strawberry_back"alt="back">
+        <div class="title">
+            <!-- circle -->
+            <div class="circle">
+            <div class="round">
+                <i class="fas fa-circle"></i>
+            </div>
+            </div>
+            <!-- text and button -->
+            <div class="text_and_button">
+                <h2>Advantages of <span>delivery-only</span></h2>
+                <a href="#" class="action_btn transp_btn">
+                    <p>Why delivery-only</p>
+                </a>
+            </div>
+        </div>
+        <!-- advantages block -->
+        <div class="advantages_block container">
+
+            <div class="advantage">
+                <div class="icon">
+                    <img src="img/ShoppingTag.svg" alt="icon">
+                </div>
+                <div class="adv_text">
+                    <p>LOWER REAL ESTATE COSTS</p>
+                </div>   
+            </div>
+
+            <div class="advantage">
+                <div class="icon">
+                    <img src="img/Filter.svg" alt="icon">
+                </div>
+                <div class="adv_text">
+                    <p>MORE EFFICIENT LABOR</p>
+                </div>   
+            </div>
+
+            <div class="advantage">
+                <div class="icon">
+                    <img src="img/Settings.svg" alt="icon">
+                </div>
+                <div class="adv_text">
+                    <p>LOWER UPFRONT COSTS</p>
+                </div>   
+            </div>
+
+        </div>
+        <!-- line with serv_block -->
+        <div class="orange_line">
+            <div class="service container">
+                <p class="serv_text">We serve those that serve others</p>
+                <span class="descr">RaketaKitchenes allows me to experiment much more freely because the risk of failure is significantly reduced.”</span>
+            </div>
+        </div>
+    </div>
+    <!-- THIRD screen -->
+    <div class="third_screen screen">
+        <div class="title">
+            <!-- circle -->
+            <div class="circle">
+            <div class="round">
+                <i class="fas fa-circle"></i>
+            </div>
+            </div>
+            <!-- text and button -->
+            <div class="text_and_button">
+                <h2>See what our partners say about running a <span>delivery-only</span> business.</h2>
+                <a href="#" class="action_btn transp_btn">
+                    <p>Our partners</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- scroll to top -->
+    <div class="scroll_to_top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
     <!-- Jquery -->
     <script src="js/jquery.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
     <!-- slick js -->
     <script src="libs/slick/slick.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/405c5b73da.js" crossorigin="anonymous"></script>
 </body>
 </html>
