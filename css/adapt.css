@@ -1,12 +1,3 @@
-@media (max-width: 760px) {
-  header nav,
-  header .tour {
-    display: none;
-  }
-  header .mobile_menu {
-    display: flex;
-  }
-}
 @media (min-width: 1920px) and (max-width: 2560px) {
   .title h2 {
     font-size: 45px;
@@ -60,6 +51,9 @@
   }
 }
 @media (max-width: 1300px) {
+  .container {
+    width: 90%;
+  }
   header .logo,
   header .tour {
     width: 20%;
@@ -69,26 +63,401 @@
     margin-left: 8%;
     margin-right: 12%;
   }
+  header .tour img {
+    width: 170%;
+  }
+  .first_screen .socials_block,
+  .first_screen .languages_block {
+    width: 5%;
+  }
   .first_screen .start h1 {
     width: 90%;
     font-size: 70px;
+  }
+  .title {
+    align-items: flex-start;
   }
   .title .text_and_button {
     flex-direction: column;
   }
   .title h2 {
-    width: 75%;
+    width: 90%;
     font-size: 40px;
-    margin-bottom: 30px;
+  }
+  .title .action_btn {
+    margin-top: 20px;
   }
   .second_screen .adv_text p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 22px;
     letter-spacing: 3.2px;
     margin: 0 auto;
     width: 60%;
   }
+  .second_screen .icon {
+    margin: 80px 0;
+  }
+  .third_screen {
+    margin-top: 35%;
+  }
   .fourth_screen .partner img {
     min-height: 400px;
+  }
+  .fourth_screen .orange_line {
+    margin-top: 30%;
+  }
+  .fourth_screen .benefits_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fourth_screen .benefit_text {
+    margin: 130px 0 40px 0;
+    margin-left: 12%;
+  }
+  .fourth_screen .benefit_main_text {
+    width: 100%;
+    font-size: 48px;
+    line-height: 57px;
+  }
+  .fourth_screen .action_btn {
+    margin-left: 12%;
+    margin-bottom: 120px;
+  }
+  .fifth_screen {
+    margin-top: 30%;
+  }
+  .fifth_screen .title h2 {
+    font-size: 78px;
+    line-height: 98px;
+    width: 60%;
+    margin: 60px auto;
+  }
+  footer {
+    margin-top: 15%;
+    padding-bottom: 100px;
+  }
+  footer .footer_wrap {
+    flex-direction: column;
+  }
+  footer .logo {
+    width: 50%;
+  }
+  footer .contacts {
+    margin-top: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+  footer .contacts a {
+    margin-bottom: 0;
+    line-height: 25px;
+    color: #fff;
+  }
+  .fourth_screen .action_btn {
+    width: 30%;
+  }
+  footer .back3 {
+    width: 70%;
+  }
+  footer .contacts .tel_contact {
+    font-size: 24px;
+  }
+  .second_wrap .line_6 {
+    top: 42%;
+  }
+  .second_wrap .line_7 {
+    top: 48%;
+  }
+  .desktop_arrow {
+    bottom: 0;
+  }
+  .arrow_next {
+    left: 20%;
+  }
+  .second_screen .orange_line {
+    margin-top: 10%;
+  }
+}
+@media (max-width: 1000px) {
+  header nav,
+  header .tour {
+    display: none;
+  }
+  header .mobile_menu {
+    display: flex;
+  }
+  .first_screen .socials_block,
+  .first_screen .languages_block {
+    display: none;
+  }
+  .second_screen .advantages_block {
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+  }
+  .second_screen .mint_back {
+    width: 25%;
+  }
+  .second_screen img {
+    width: 100%;
+  }
+  .second_screen .descr {
+    opacity: 1;
+  }
+  .second_screen .orange_line {
+    background-color: none;
+    margin: 20% 0;
+  }
+  .second_screen .service {
+    position: static;
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+  }
+  .fourth_screen .partners {
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+  }
+  .fourth_screen .partner img {
+    max-height: 350px;
+    min-height: 350px;
+  }
+  .fourth_screen .orange_line {
+    margin-top: 75%;
+  }
+  .fourth_screen .benefit_main_text {
+    font-size: 40px;
+  }
+  .third_screen .review {
+    font-size: 16px;
+  }
+  .fifth_screen {
+    margin-top: 10%;
+  }
+  .fourth_screen .orange_line {
+    flex-direction: column;
+    background-color: inherit;
+  }
+  .fourth_screen .absolute_line_block {
+    width: 100%;
+    position: static;
+  }
+  .fifth_screen .title h2 {
+    font-size: 55px;
+    line-height: 80px;
+  }
+  footer .get_in_touch {
+    width: 100%;
+  }
+  footer .get_in_touch form {
+    width: 100%;
+  }
+  footer .contacts {
+    width: 80%;
+  }
+  .second_screen .serv_text {
+    width: 50%;
+  }
+  .second_screen .descr {
+    width: 60%;
+  }
+}
+@media (max-width: 760px) {
+  .default_popup {
+    width: 70%;
+  }
+  .default_popup .start_popup_wrap {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  header .logo {
+    width: 40%;
+  }
+  .first_screen .welcome_block {
+    display: none;
+  }
+  .first_screen .start {
+    width: 100%;
+  }
+  .third_screen .slider {
+    width: 100%;
+  }
+  .third_screen .plashka_wrap {
+    width: 70%;
+    padding: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 80%;
+  }
+  .slick-slide {
+    padding: 100px 0;
+  }
+  .fourth_screen .action_btn {
+    width: 40%;
+  }
+  .third_screen .slider {
+    background: url(../img/roundLogo.svg) -15% 60% no-repeat;
+    background-size: 65%;
+  }
+  .fourth_screen .orange_line {
+    margin-top: 95%;
+  }
+  .fourth_screen .benefit_main_text {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .second_screen .orange_line {
+    margin: 30% 0;
+  }
+}
+@media (max-width: 650px) {
+  .fourth_screen .benefit_text {
+    margin: 70px 0 30px 0;
+    margin-left: 12%;
+  }
+  .fifth_screen .title h2 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .slick-slide {
+    padding: 140px 0;
+  }
+  .third_screen .slide_photo {
+    width: 100%;
+  }
+  .third_screen .plashka_wrap {
+    width: 90%;
+  }
+}
+@media (max-width: 550px) {
+  .title {
+    flex-direction: column;
+  }
+  .default_popup {
+    width: 95%;
+  }
+  .default_popup .send_btn {
+    width: 140px;
+    margin-top: 20px;
+  }
+  .first_screen .start .start_wrap {
+    margin-bottom: 20%;
+  }
+  header .logo {
+    width: 60%;
+  }
+  .first_screen .start .delivery_text {
+    font-size: 24px;
+  }
+  .get_started_block {
+    width: 100%;
+  }
+  .first_screen .start h1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .title {
+    width: 90%;
+  }
+  .title h2 {
+    width: 100%;
+    font-size: 32px;
+  }
+  .second_screen .icon {
+    margin: 50px 0;
+  }
+  .fifth_screen .title h2 {
+    font-size: 25px;
+    line-height: 30px;
+    width: 80%;
+  }
+  .second_screen .adv_text p {
+    font-size: 12px;
+    width: 85%;
+  }
+  .title .text_and_button {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 30px;
+  }
+  .fourth_screen .partner img {
+    max-height: 200px;
+    min-height: 200px;
+  }
+  .fourth_screen .partner .partner_name {
+    font-size: 26px;
+  }
+  .fourth_screen .partner .partner_text {
+    width: 75%;
+  }
+  footer .footer_wrap {
+    width: 90%;
+  }
+  footer .contacts {
+    flex-direction: column;
+  }
+  footer .contacts .tel_contact {
+    margin-bottom: 20px;
+  }
+  .second_screen .service {
+    position: static;
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+  }
+  .absolute_main_text {
+    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .second_screen .serv_text {
+    padding-top: 20px;
+  }
+  .second_screen .descr {
+    width: 80%;
+  }
+  .fourth_screen .benefit_text {
+    margin: 30px 0 30px 0;
+    margin-left: 12%;
+    width: 80%;
+  }
+  .fourth_screen .benefit_main_text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .fourth_screen .action_btn {
+    width: 80%;
+  }
+  .fourth_screen .orange_line {
+    margin-top: 115%;
+  }
+  .arrow_next {
+    right: 30%;
+    left: unset;
+  }
+  .arrow_prev {
+    left: 30%;
+  }
+  .third_screen .plashka_content {
+    padding: 10px;
+  }
+  .third_screen .review {
+    width: 71%;
+    line-height: 30px;
+    font-size: 14px;
+  }
+  .third_screen .plashka_wrap {
+    padding: 20px;
+  }
+  .third_screen .review {
+    width: 100%;
+  }
+  .third_screen .slide_photo {
+    max-height: 400px;
+  }
+  .fourth_screen .absolute_line_block {
+    min-height: 350px;
   }
 }

@@ -1,7 +1,15 @@
 jQuery(document).ready(function($) {
     // Scroll to top button size
+
     var size = $( '.languages_block' ).width();
-    $( '.scroll_to_top' ).height(size).width(size);
+    if(document.documentElement.clientWidth > 1000){
+      $( '.scroll_to_top' ).height(size).width(size);
+    } else if(document.documentElement.clientWidth <= 1000 && document.documentElement.clientWidth > 500){
+      $( '.scroll_to_top' ).height(100).width(100);
+    } else{
+      $( '.scroll_to_top' ).height(60).width(60);
+    }
+    
     
     $(document).on("scroll", window, function () {
         if ($(window).scrollTop()>200){
@@ -51,6 +59,13 @@ jQuery(document).ready(function($) {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top - 50}, 1000);
     });
+
+    $(".mobile").on("click","a", function (event) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('.mobile').removeClass('active');
+  });
 
     $(function(){
         $('.scroll_to_delivery').on('click', function(e){
