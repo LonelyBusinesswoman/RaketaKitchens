@@ -11,3 +11,101 @@ header{
         }
     }
 }
+// 1920 and >
+@media (min-width: 1920px) and (max-width: 2560px){
+    // title text
+    .title h2{
+        font-size: 45px;
+    }
+    // nav
+    header nav{
+        width: 35%;
+    }
+    // h1
+    .first_screen .start h1{
+        font-size: 70px;
+        line-height: 90px;
+    }
+    // advantages icon size
+    .second_screen .icon{
+        margin: 100px 0;
+    }
+    .second_screen img {
+        width: 100%;
+    }
+    // serv block
+    .second_screen .serv_text{
+        padding-top: 220px;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .second_screen .descr{
+        padding-bottom: 200px;
+    }
+    // slider
+    .third_screen .slider{
+        padding:  150px 0 ;
+    }
+    .third_screen .review,  .third_screen .author {
+        font-size: 30px;
+    }
+    .third_screen .slide_photo{
+        max-height: 900px;
+    }
+    // benefits block
+    .fourth_screen .benefit_text{
+        margin: 200px 0 150px 0;
+        margin-left: 12%;
+    }
+    .fourth_screen .benefit_main_text{
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+// < 1400px
+@media (max-width: 1400px){
+    .third_screen{
+        margin-top: 25%;
+    }
+    .fourth_screen .action_btn{
+        width: 24%;
+    }
+}
+// < 1300px
+@media (max-width: 1300px){
+    // header
+   header .logo, header .tour {
+       width: 20%;
+   }
+   header nav {
+    width: 60%;
+    margin-left: 8%;
+    margin-right: 12%;
+   }
+//    h1
+    .first_screen .start h1{
+        width: 90%;
+        font-size: 70px;
+    }
+    // title text
+    .title .text_and_button{
+        flex-direction: column;
+    }
+    .title h2{
+        width: 75%;
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    // advantages blocks
+    .second_screen .adv_text p{
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 3.2px;
+        margin: 0 auto;
+        width: 60%;
+    }
+    // partners
+    .fourth_screen .partner img{
+        min-height: 400px;
+    }
+}

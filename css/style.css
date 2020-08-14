@@ -127,6 +127,7 @@
   width: 40px;
   border: 2px solid #EB673F;
   background: rgba(235, 103, 63, 0.1);
+  position: relative;
 }
 .title .round .fas {
   z-index: 2;
@@ -230,19 +231,19 @@ input:focus:-ms-input-placeholder {
 .arrow_prev {
   left: 10%;
 }
-.start_popup {
+.default_popup {
   width: 50%;
   background: rgba(36, 34, 33, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   margin: 0 auto;
 }
-.start_popup .start_popup_wrap {
+.default_popup .start_popup_wrap {
   padding: 60px 80px;
   display: flex;
   flex-direction: column;
 }
-.start_popup p {
+.default_popup p {
   font-family: 'AvenirNextCyr_Demi', sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -250,20 +251,20 @@ input:focus:-ms-input-placeholder {
   text-transform: uppercase;
   margin-bottom: 60px;
 }
-.start_popup form {
+.default_popup form {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.start_popup input {
+.default_popup input {
   padding-bottom: 10px;
   margin-bottom: 50px;
   border-bottom: 1px solid #8A827F;
 }
-.start_popup input:focus {
+.default_popup input:focus {
   border-bottom: 1px solid #fff;
 }
-.start_popup a p {
+.default_popup a p {
   margin-right: 0;
 }
 * {
@@ -366,6 +367,15 @@ body {
 .second_wrap .line_8,
 .third_wrap .line_8 {
   top: 45%;
+}
+.first_wrap {
+  z-index: 20;
+}
+.second_wrap {
+  z-index: 10;
+}
+.third_wrap {
+  z-index: 5;
 }
 header {
   width: 80%;
@@ -586,8 +596,8 @@ header .mobile_menu .burg {
 }
 .first_screen .start {
   width: 94%;
-  background: url(../img/firstScreenImg.jpg) 50% 0% no-repeat;
-  background-size: contain;
+  background: url(../img/firstScreenImg.jpg) 100% 100% no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
 }
@@ -637,14 +647,14 @@ header .mobile_menu .burg {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
 }
-.second_screen .round .fas::after {
+.second_screen .round::after {
   content: '';
   position: absolute;
   width: 2px;
   background-color: #333030;
   height: 120vh;
-  top: 5px;
-  z-index: 1;
+  top: 20px;
+  z-index: -1;
 }
 .second_screen .advantage {
   width: 100%;
@@ -699,29 +709,34 @@ header .mobile_menu .burg {
 .third_screen {
   margin-top: 20%;
   flex-direction: column;
+  z-index: 25;
 }
 .third_screen .slider {
-  z-index: 3;
+  z-index: 5;
   background: url(../img/roundLogo.svg) 20% 60% no-repeat;
   background-size: 65%;
   padding: 65px 0;
 }
-.third_screen .round .fas::after {
+.third_screen .round::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #333030;
+  height: 60vh;
+  top: 20px;
+  z-index: -1;
+}
+.third_screen .round::before {
   content: '';
   position: absolute;
   width: 2px;
   background-color: #333030;
   height: 120vh;
-  top: 5px;
-}
-.third_screen .round .fas::before {
-  content: '';
-  position: absolute;
-  width: 2px;
-  background-color: #333030;
-  height: 100vh;
+  bottom: 20px;
+  z-index: -1;
 }
 .third_screen .slide {
+  z-index: 5;
   width: 100%;
   position: relative;
   display: flex !important;
@@ -781,6 +796,16 @@ header .mobile_menu .burg {
 .fourth_screen {
   margin-top: 10%;
   flex-direction: column;
+  z-index: 20;
+}
+.fourth_screen .round::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 2px;
+  background-color: #333030;
+  height: 100vh;
+  bottom: 20px;
 }
 .fourth_screen .partners {
   display: grid;
@@ -881,7 +906,7 @@ header .mobile_menu .burg {
 }
 .fifth_screen .title h2 {
   width: 100%;
-  margin: 40px 0 ;
+  margin: 60px 0 ;
   font-size: 60px;
   text-align: center;
 }

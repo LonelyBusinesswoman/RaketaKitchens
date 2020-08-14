@@ -165,6 +165,7 @@
         width: 40px;
         border: 2px solid @orange;
         background: rgba(235, 103, 63, 0.1);
+        position: relative;
         .fas{
             z-index: 2;
             display: flex;
@@ -279,7 +280,7 @@ input:focus:-ms-input-placeholder {
     left: 10%;
 }
 // Popup get start 
-.start_popup{
+.default_popup{
     width: 50%;
     background: rgba(36, 34, 33, 0.8);
     backdrop-filter: blur(10px);
@@ -405,6 +406,15 @@ body{
     .line_8{
         top: 45%;
     }
+}
+.first_wrap{
+    z-index: 20;
+}
+.second_wrap{
+    z-index: 10;
+}
+.third_wrap{
+    z-index: 5;
 }
 
 // HEADER
@@ -636,8 +646,8 @@ header{
     }
     .start{
         width: 94%;
-        background: url(../img/firstScreenImg.jpg) 50% 0% no-repeat;
-        background-size: contain;
+        background: url(../img/firstScreenImg.jpg) 100% 100% no-repeat;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         .start_wrap{
@@ -690,16 +700,14 @@ header{
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
     }
-    .round{
-        .fas::after{
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: #333030;
-            height: 120vh;
-            top: 5px;
-            z-index: 1;
-        }
+    .round::after{
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: #333030;
+        height: 120vh;
+        top: 20px;
+        z-index: -1;
     }
     .advantage{
         width: 100%;
@@ -758,30 +766,33 @@ header{
 .third_screen{
     margin-top: 20%;
     flex-direction: column;
+    z-index: 25;
     .slider{
-        z-index: 3;
+        z-index: 5;
         background: url(../img/roundLogo.svg) 20% 60% no-repeat;
         background-size: 65%;
         padding: 65px 0;
     }
-    .round{
-        .fas::after{
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: #333030;
-            height: 120vh;
-            top: 5px;
-        }
-        .fas::before{
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: #333030;
-            height: 100vh;
-        }
+    .round::after{
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: #333030;
+        height: 60vh;
+        top: 20px;
+        z-index: -1;
+    }
+    .round::before{
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: #333030;
+        height: 120vh;
+        bottom: 20px;
+        z-index: -1;
     }
     .slide{
+        z-index: 5;
         width: 100%;
         position: relative;
         display: flex !important; 
@@ -843,6 +854,16 @@ header{
 .fourth_screen{
     margin-top: 10%;
     flex-direction: column;
+    z-index: 20;
+    .round::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 2px;
+        background-color: #333030;
+        height: 100vh;
+        bottom: 20px;
+    }
     .partners{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -944,7 +965,7 @@ header{
         width: 100%;
         h2{
             width: 100%;
-            margin: 40px 0 ;
+            margin: 60px 0 ;
             font-size: 60px;
             text-align: center;
         }

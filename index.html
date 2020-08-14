@@ -16,6 +16,8 @@
     
 </head>
 <body>
+
+    <!-- first wrap -->
     <div class="first_wrap">
         <!-- back line -->
         <img class="dec_line line_1" src="img/line_1.svg" alt="line">
@@ -36,7 +38,7 @@
                 </ul>
             </nav>
             <div class="tour">
-                <a href="#">View a tour</a>
+                <a  class="view_3d_tour_popup" href="#3d_popup">View a tour</a>
                 <img src="img/CircleText.svg" alt="text">
             </div>
             <!-- Burger -->
@@ -156,6 +158,7 @@
         </div>
     </div>
 
+    <!-- second wrap -->
     <div class="second_wrap">
         <!-- lines -->
         <img class="dec_line line_4" src="img/line_4.svg" alt="line">
@@ -284,11 +287,10 @@
                             <p class="benefit_main_text absolute_main_text">The most entrepreneurial cities in the UA</p>
                         </div>
 
-                        <a href="#" class="action_btn orange_btn">
+                        <a href="#show_map_popup" class="action_btn orange_btn show_map_popup">
                             <p>learn more</p>
                             <i class="fas fa-caret-right"></i>
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -304,7 +306,7 @@
             <div class="title">
                 <h2>the trend with <span>RaketaKitchens</span></h2>
             </div>
-            <a href="#" class="action_btn orange_btn">
+            <a href="#get_start_popup" class="action_btn orange_btn get_start_popup">
                 <p>learn more</p>
                 <i class="fas fa-caret-right"></i>
             </a>
@@ -338,9 +340,20 @@
     <div class="scroll_to_top">
         <i class="fas fa-arrow-up"></i>
     </div>
-
+    <!-- 3d tour popup -->
+    <div id="3d_popup" class="mfp-hide 3d_popup default_popup">
+        <div class="start_popup_wrap">
+            <p>3d tour popup</p>
+        </div>
+    </div>
+     <!-- map  popup -->
+     <div id="show_map_popup" class="mfp-hide map_popup default_popup">
+        <div class="start_popup_wrap">
+            <p>map popup</p>
+        </div>
+    </div>
     <!-- get start popup -->
-    <div id="get_start_popup" class="mfp-hide start_popup">
+    <div id="get_start_popup" class="mfp-hide start_popup default_popup">
         <div class="start_popup_wrap">
             <p>Contact us to get started</p>
             <form action="">

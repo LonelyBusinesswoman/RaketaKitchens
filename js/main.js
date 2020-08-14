@@ -38,6 +38,12 @@ jQuery(document).ready(function($) {
       $('.get_start_popup').magnificPopup({
         type:'inline'
       });
+      $('.view_3d_tour_popup').magnificPopup({
+        type:'inline'
+      });
+      $('.show_map_popup').magnificPopup({
+        type:'inline'
+      });
     //   scroll animation
     $("nav").on("click","a", function (event) {
         event.preventDefault();
