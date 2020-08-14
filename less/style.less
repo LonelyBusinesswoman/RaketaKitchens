@@ -166,6 +166,11 @@
         border: 2px solid @orange;
         background: rgba(235, 103, 63, 0.1);
         .fas{
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
             color: @orange;
             font-size: 5px;
         }
@@ -370,6 +375,7 @@ body{
     left: 0;
 }
 .first_wrap, .second_wrap, .third_wrap{
+    position: relative;
     background: linear-gradient(322.84deg, #242221 54.67%, #8E8E8E 224.58%);
     width: 100%;
     display: flex;
@@ -379,15 +385,28 @@ body{
         top: 0%;
     }
     .line_2{
-        top: 18%;
+        top: 5%;
     }
     .line_3{
-        top: 138%;
+        top: 55%;
     }
     .line_4{
+        top: 15%;
+    }
+    .line_5{
         top: 20%;
     }
+    .line_6{
+        top: 60%;
+    }
+    .line_7{
+        top: 70%;
+    }
+    .line_8{
+        top: 45%;
+    }
 }
+
 // HEADER
 header{
     width: 80%;
@@ -671,6 +690,17 @@ header{
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 20px;
     }
+    .round{
+        .fas::after{
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #333030;
+            height: 120vh;
+            top: 5px;
+            z-index: 1;
+        }
+    }
     .advantage{
         width: 100%;
         display: flex;
@@ -697,6 +727,7 @@ header{
         }
     }
     .service{
+        z-index: 3;
         background-image: url(../img/serving.png);
         background-repeat: no-repeat;
         background-size: cover;
@@ -728,9 +759,27 @@ header{
     margin-top: 20%;
     flex-direction: column;
     .slider{
+        z-index: 3;
         background: url(../img/roundLogo.svg) 20% 60% no-repeat;
         background-size: 65%;
         padding: 65px 0;
+    }
+    .round{
+        .fas::after{
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #333030;
+            height: 120vh;
+            top: 5px;
+        }
+        .fas::before{
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #333030;
+            height: 100vh;
+        }
     }
     .slide{
         width: 100%;
@@ -846,7 +895,7 @@ header{
         }
     }
     .orange_line{
-        margin-top: 15%;
+        margin-top: 20%;
     }
     .benefits{
         background: url(../img/benefits.jpg) no-repeat;
@@ -858,7 +907,7 @@ header{
         align-items: center;
     }
     .benefit_text{
-        margin: 120px 0 100px 0;
+        margin: 130px 0 110px 0;
         margin-left: 12%;
         width: 60%;
     }

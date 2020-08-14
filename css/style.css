@@ -129,6 +129,11 @@
   background: rgba(235, 103, 63, 0.1);
 }
 .title .round .fas {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   color: #EB673F;
   font-size: 5px;
 }
@@ -316,6 +321,7 @@ body {
 .first_wrap,
 .second_wrap,
 .third_wrap {
+  position: relative;
   background: linear-gradient(322.84deg, #242221 54.67%, #8E8E8E 224.58%);
   width: 100%;
   display: flex;
@@ -329,17 +335,37 @@ body {
 .first_wrap .line_2,
 .second_wrap .line_2,
 .third_wrap .line_2 {
-  top: 18%;
+  top: 5%;
 }
 .first_wrap .line_3,
 .second_wrap .line_3,
 .third_wrap .line_3 {
-  top: 138%;
+  top: 55%;
 }
 .first_wrap .line_4,
 .second_wrap .line_4,
 .third_wrap .line_4 {
+  top: 15%;
+}
+.first_wrap .line_5,
+.second_wrap .line_5,
+.third_wrap .line_5 {
   top: 20%;
+}
+.first_wrap .line_6,
+.second_wrap .line_6,
+.third_wrap .line_6 {
+  top: 60%;
+}
+.first_wrap .line_7,
+.second_wrap .line_7,
+.third_wrap .line_7 {
+  top: 70%;
+}
+.first_wrap .line_8,
+.second_wrap .line_8,
+.third_wrap .line_8 {
+  top: 45%;
 }
 header {
   width: 80%;
@@ -611,6 +637,15 @@ header .mobile_menu .burg {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px;
 }
+.second_screen .round .fas::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #333030;
+  height: 120vh;
+  top: 5px;
+  z-index: 1;
+}
 .second_screen .advantage {
   width: 100%;
   display: flex;
@@ -637,6 +672,7 @@ header .mobile_menu .burg {
   line-height: 22px;
 }
 .second_screen .service {
+  z-index: 3;
   background-image: url(../img/serving.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -665,9 +701,25 @@ header .mobile_menu .burg {
   flex-direction: column;
 }
 .third_screen .slider {
+  z-index: 3;
   background: url(../img/roundLogo.svg) 20% 60% no-repeat;
   background-size: 65%;
   padding: 65px 0;
+}
+.third_screen .round .fas::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #333030;
+  height: 120vh;
+  top: 5px;
+}
+.third_screen .round .fas::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background-color: #333030;
+  height: 100vh;
 }
 .third_screen .slide {
   width: 100%;
@@ -780,7 +832,7 @@ header .mobile_menu .burg {
   height: auto;
 }
 .fourth_screen .orange_line {
-  margin-top: 15%;
+  margin-top: 20%;
 }
 .fourth_screen .benefits {
   background: url(../img/benefits.jpg) no-repeat;
@@ -792,7 +844,7 @@ header .mobile_menu .burg {
   align-items: center;
 }
 .fourth_screen .benefit_text {
-  margin: 120px 0 100px 0;
+  margin: 130px 0 110px 0;
   margin-left: 12%;
   width: 60%;
 }
