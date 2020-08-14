@@ -222,6 +222,7 @@ input {
     line-height: normal;
     outline: none;
     border-style: none;
+    background: none;
 }
 
 /**
@@ -336,7 +337,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #fff;
 }
 
 

@@ -6,7 +6,9 @@
 	<title>RaketaKitchens</title>	
 	<!-- Slick -->
 	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
+    <!-- Magnific popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- CSS style -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css?v=1">
@@ -14,159 +16,337 @@
     
 </head>
 <body>
-    <header>
-        <!-- logo -->
-        <div class="logo">
-            <img src="img/Logo.svg" alt="logo">
-        </div>
-        <!-- nav -->
-        <nav>
-            <ul>
-                <li><a href="#">Smart kitchens</a></li>
-                <li><a href="#">Delivery-only</a></li>
-                <li><a href="#">Our Partners</a></li>
-                <li><a href="#">Careers</a></li>
-            </ul>
-        </nav>
-        <div class="tour">
-            <a href="#">View a tour</a>
-            <img src="img/CircleText.svg" alt="text">
-        </div>
-        <!-- Burger -->
-        <div class="mobile_menu">
-			<div class="burg"></div>
-			<div class="burg"></div>
-			<div class="burg"></div>
-		</div>
-    </header>
-	<!-- mobile nav-->
-	<section class="mobile">
-		<div class="wrap">
-			<div class="close_mob_menu">
-				<img src="img/cross.svg" alt="cross">
-			</div>
-			<ul>
-                <li><a href="#">Smart kitchens</a></li>
-                <li><a href="#">Delivery-only</a></li>
-                <li><a href="#">Our Partners</a></li>
-                <li><a href="#">Careers</a></li>
-            </ul>
-		</div>
-    </section>
-    <!-- FIRST screen -->
-    <div class="first_screen screen">
-        <div class="socials_block">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <!-- get started -->
-        <div class="get_started_block container">
-            <div class="welcome_block">
-                <p>Welcome</p>
+    <div class="first_wrap">
+        <!-- back line -->
+        <img class="dec_line line_1" src="img/line_1.svg" alt="line">
+        <img class="dec_line line_2" src="img/line_2.svg" alt="line">
+        <img class="dec_line line_3" src="img/line_3.svg" alt="line">
+        <header>
+            <!-- logo -->
+            <div class="logo">
+                <img src="img/Logo.svg" alt="logo">
             </div>
-            <div class="start">
-                <div class="start_wrap">
-                    <p class="delivery_text">Delivery kitchens</p>
+            <!-- nav -->
+            <nav>
+                <ul>
+                    <li><a href="#smartKitchens">Smart kitchens</a></li>
+                    <li><a href="#delivery_only">Delivery-only</a></li>
+                    <li><a href="#partners">Our Partners</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </nav>
+            <div class="tour">
+                <a href="#">View a tour</a>
+                <img src="img/CircleText.svg" alt="text">
+            </div>
+            <!-- Burger -->
+            <div class="mobile_menu">
+                <div class="burg"></div>
+                <div class="burg"></div>
+                <div class="burg"></div>
+            </div>
+        </header>
+        <!-- mobile nav-->
+        <section class="mobile">
+            <div class="wrap">
+                <div class="close_mob_menu">
+                    <img src="img/cross.svg" alt="cross">
+                </div>
+                <ul>
+                    <li><a href="#">Smart kitchens</a></li>
+                    <li><a href="#">Delivery-only</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </section>
+        <!-- FIRST screen -->
+        <div id = "smartKitchens" class="first_screen screen">
 
-                    <h1>A turnkey solution for <span>delivery-only</span> restaurant</h1>
-                
-                    <a href="#" class="action_btn orange_btn">
-                        <p>get started</p>
-                        <i class="fas fa-caret-right"></i>
+            <div class="socials_block">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <!-- get started -->
+            <div class="get_started_block container">
+                <div class="welcome_block">
+                    <p>Welcome</p>
+                </div>
+                <div class="start">
+                    <div class="start_wrap">
+                        <p class="delivery_text">Delivery kitchens</p>
+    
+                        <h1>A turnkey solution for <span>delivery-only</span> restaurant</h1>
+                    
+                        <a href="#get_start_popup" class="action_btn orange_btn get_start_popup">
+                            <p>get started</p>
+                            <i class="fas fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="languages_block">
+                <ul>
+                    <li><a href="#" class="active">EN</a></li>
+                    <li><a href="#">RU</a></li>
+                    <li><a href="#">UA</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- SECOND screen-->
+        <div class="second_screen screen">
+            <!-- mint img -->
+            <img src="img/mint.png" class="mint_back" alt="back">
+            <!-- strawberry img -->
+            <img src="img/strawberry.png" class="strawberry_back"alt="back">
+            <div class="title">
+                <!-- circle -->
+                <div class="circle">
+                <div class="round">
+                    <i class="fas fa-circle"></i>
+                </div>
+                </div>
+                <!-- text and button -->
+                <div class="text_and_button">
+                    <h2>Advantages of <span>delivery-only</span></h2>
+                    <a href="#" class="action_btn transp_btn scroll_to_delivery">
+                        <p>Why delivery-only</p>
                     </a>
                 </div>
             </div>
-        </div>
-        <div class="languages_block">
-            <ul>
-                <li><a href="#" class="active">EN</a></li>
-                <li><a href="#">RU</a></li>
-                <li><a href="#">UA</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- SECOND screen-->
-    <div class="second_screen screen">
-        <!-- mint img -->
-        <img src="img/mint.png" class="mint_back" alt="back">
-        <!-- strawberry img -->
-        <img src="img/strawberry.png" class="strawberry_back"alt="back">
-        <div class="title">
-            <!-- circle -->
-            <div class="circle">
-            <div class="round">
-                <i class="fas fa-circle"></i>
-            </div>
-            </div>
-            <!-- text and button -->
-            <div class="text_and_button">
-                <h2>Advantages of <span>delivery-only</span></h2>
-                <a href="#" class="action_btn transp_btn">
-                    <p>Why delivery-only</p>
-                </a>
-            </div>
-        </div>
-        <!-- advantages block -->
-        <div class="advantages_block container">
-
-            <div class="advantage">
-                <div class="icon">
-                    <img src="img/ShoppingTag.svg" alt="icon">
+            <!-- advantages block -->
+            <div class="advantages_block container">
+    
+                <div class="advantage">
+                    <div class="icon">
+                        <img src="img/ShoppingTag.svg" alt="icon">
+                    </div>
+                    <div class="adv_text">
+                        <p>LOWER REAL ESTATE COSTS</p>
+                    </div>   
                 </div>
-                <div class="adv_text">
-                    <p>LOWER REAL ESTATE COSTS</p>
-                </div>   
-            </div>
-
-            <div class="advantage">
-                <div class="icon">
-                    <img src="img/Filter.svg" alt="icon">
+    
+                <div class="advantage">
+                    <div class="icon">
+                        <img src="img/Filter.svg" alt="icon">
+                    </div>
+                    <div class="adv_text">
+                        <p>MORE EFFICIENT LABOR</p>
+                    </div>   
                 </div>
-                <div class="adv_text">
-                    <p>MORE EFFICIENT LABOR</p>
-                </div>   
-            </div>
-
-            <div class="advantage">
-                <div class="icon">
-                    <img src="img/Settings.svg" alt="icon">
+    
+                <div class="advantage">
+                    <div class="icon">
+                        <img src="img/Settings.svg" alt="icon">
+                    </div>
+                    <div class="adv_text">
+                        <p>LOWER UPFRONT COSTS</p>
+                    </div>   
                 </div>
-                <div class="adv_text">
-                    <p>LOWER UPFRONT COSTS</p>
-                </div>   
+    
             </div>
-
-        </div>
-        <!-- line with serv_block -->
-        <div class="orange_line">
-            <div class="service container">
-                <p class="serv_text">We serve those that serve others</p>
-                <span class="descr">RaketaKitchenes allows me to experiment much more freely because the risk of failure is significantly reduced.”</span>
+            <!-- line with serv_block -->
+            <div class="orange_line">
+                <div  id = "delivery_only" class="service absolute_line_block container">
+                    <p class="serv_text absolute_main_text">We serve those that serve others</p>
+                    <span class="descr">RaketaKitchenes allows me to experiment much more freely because the risk of failure is significantly reduced.”</span>
+                </div>
             </div>
         </div>
     </div>
-    <!-- THIRD screen -->
-    <div class="third_screen screen">
-        <div class="title">
-            <!-- circle -->
-            <div class="circle">
-            <div class="round">
-                <i class="fas fa-circle"></i>
+
+    <div class="second_wrap">
+        <!-- lines -->
+        <img class="dec_line line_4" src="img/line_1.svg" alt="line">
+            <!-- THIRD screen -->
+        <div class="third_screen screen">
+            <div class="title">
+                <!-- circle -->
+                <div class="circle">
+                <div class="round">
+                    <i class="fas fa-circle"></i>
+                </div>
+                </div>
+                <!-- text and button -->
+                <div class="text_and_button">
+                    <h2>See what our partners say about running a <span>delivery-only</span> business.</h2>
+                    <a href="#" class="action_btn transp_btn scroll_to_partners">
+                        <p>Our partners</p>
+                    </a>
+                </div>
             </div>
+            <div class="slider container">
+
+                <div class="slide">
+                    <img class = "slide_photo" src="img/slide_photo.jpg" alt="slide">
+
+                    <div class="plashka_wrap">
+                        <div class="plashka_content">
+                            <!-- ears -->
+                            <img  class ="dec_1" src="img/des_element_1.svg" alt="ear">
+                            <img  class ="dec_2" src="img/des_element_2.svg" alt="ear">
+                            <p class="review">RaketaKitchenes allows me to <br> experiment much more freely because  <br> the risk of failure is significantly reduced.”</p>
+                            <span class="author">Eric Greenspan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img class = "slide_photo" src="img/slide_photo.jpg" alt="slide">
+
+                    <div class="plashka_wrap">
+                        <div class="plashka_content">
+                            <!-- ears -->
+                            <img  class ="dec_1" src="img/des_element_1.svg" alt="ear">
+                            <img  class ="dec_2" src="img/des_element_2.svg" alt="ear">
+                            <p class="review">RaketaKitchenes allows me to <br> experiment much more freely because  <br> the risk of failure is significantly reduced.”</p>
+                            <span class="author">Eric Greenspan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img class = "slide_photo" src="img/slide_photo.jpg" alt="slide">
+
+                    <div class="plashka_wrap">
+                        <div class="plashka_content">
+                            <!-- ears -->
+                            <img  class ="dec_1" src="img/des_element_1.svg" alt="ear">
+                            <img  class ="dec_2" src="img/des_element_2.svg" alt="ear">
+                            <p class="review">RaketaKitchenes allows me to <br> experiment much more freely because  <br> the risk of failure is significantly reduced.”</p>
+                            <span class="author">Eric Greenspan</span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <!-- text and button -->
-            <div class="text_and_button">
-                <h2>See what our partners say about running a <span>delivery-only</span> business.</h2>
-                <a href="#" class="action_btn transp_btn">
-                    <p>Our partners</p>
-                </a>
+        </div>
+        <!--  FOURTH screen -->
+        <div id ="partners" class="fourth_screen screen">
+            <!-- lines -->
+            <div class="title">
+                <!-- circle -->
+                <div class="circle">
+                <div class="round">
+                    <i class="fas fa-circle"></i>
+                </div>
+                </div>
+                <!-- text and button -->
+                <div class="text_and_button">
+                    <h2>Who do we <span>partner with</span></h2>
+                </div>
+            </div>
+            <div class="partners container">
+
+                <div class="partner">
+                    <img src="img/prtnr_1.png" alt="partner">
+                    <div class="partner_text">
+                        <p class="partner_name">National <br> Chain</p>
+                        <span class="partner_descr">Restaurant operators looking to leverage their brand into a delivery-only concept.</span>
+                    </div>
+                </div>
+
+                <div class="partner">
+                    <img src="img/prtnr_2.png" alt="partner">
+                    <div class="partner_text">
+                        <p class="partner_name">Single Location</p>
+                        <span class="partner_descr">Restaurant operators looking to leverage their brand into a delivery-only concept.</span>
+                    </div>
+                </div>
+
+                <div class="partner">
+                    <img src="img/prtnr_3.png" alt="partner">
+                    <div class="partner_text">
+                        <p class="partner_name">Food <br> Enterpreneurs</p>
+                        <span class="partner_descr">Restaurant operators looking to leverage their brand into a delivery-only concept.</span>
+                    </div>
+                </div>
+
+                <div class="partner">
+                    <img src="img/prtnr_4.png" alt="partner">
+                    <div class="partner_text">
+                        <p class="partner_name">Food Truck <br> Owners</p>
+                        <span class="partner_descr">Restaurant operators looking to leverage their brand into a delivery-only concept.</span>
+                    </div>
+                </div>
+            </div>
+            <!-- orange line with block -->
+            <div class="orange_line">
+                <div class=" benefits absolute_line_block container">
+                    <div class="benefits_wrap">
+
+                        <div class="benefit_text">
+                            <span class="benefit_descr">The benefits of being your own boss</span>
+                            <p class="benefit_main_text absolute_main_text">The most entrepreneurial cities in the UA</p>
+                        </div>
+
+                        <a href="#" class="action_btn orange_btn">
+                            <p>learn more</p>
+                            <i class="fas fa-caret-right"></i>
+                        </a>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+   <!-- third wrap -->
+   <div class="third_wrap">
+        <!-- FIFTH screen  -->
+        <div class="fifth_screen screen">
+            <span class="stay">stay ahead of</span>
+            <div class="title">
+                <h2>the trend with <span>RaketaKitchens</span></h2>
+            </div>
+            <a href="#" class="action_btn orange_btn">
+                <p>learn more</p>
+                <i class="fas fa-caret-right"></i>
+            </a>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="footer_wrap">
+                <div class="get_in_touch">
+                    <!-- logo -->
+                    <div class="logo">
+                        <img src="img/Logo.svg" alt="logo">
+                    </div>
+                    <span>Interested in learning more? Enter your email and a customer specialist will be in touch shortly.</span>
+                    <form action="">
+                        <input type="email" placeholder="Enter your email address">
+                        <button type ="submit">ok</button>
+                    </form>
+                </div>
+                <div class="contacts">
+                    <a  class = "tel_contact" href="tel:0800218055">0800 218 055</a>
+                    <a class = "email_contact" href="mailto:support@raketaapp.com">support@raketaapp.com</a>
+                </div>
+            </div>
+             <!-- back -->
+             <img class ="back3" src="img/back3.png" alt="back"> 
+        </footer>
+       
+   </div>
+    
     <!-- scroll to top -->
     <div class="scroll_to_top">
         <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- get start popup -->
+    <div id="get_start_popup" class="mfp-hide start_popup">
+        <div class="start_popup_wrap">
+            <p>Contact us to get started</p>
+            <form action="">
+                <input type="text" placeholder="Full name* (Required)">
+                <input type="email" placeholder="E-mail* (Required)">
+                <input type="tel" placeholder="Phone* (Required)">
+                <a href="#" class="action_btn orange_btn send_btn">
+                    <p>Send</p>
+                </a>
+            </form>
+        </div>
     </div>
     <!-- Jquery -->
     <script src="js/jquery.js"></script>
@@ -174,6 +354,8 @@
     <script src="js/main.js"></script>
     <!-- slick js -->
     <script src="libs/slick/slick.js"></script>
+    <!-- magnific popup -->
+    <script src="js/jquery.magnific-popup.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/405c5b73da.js" crossorigin="anonymous"></script>
 </body>
