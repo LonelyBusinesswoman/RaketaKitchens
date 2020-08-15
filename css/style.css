@@ -297,8 +297,11 @@ input:focus:-ms-input-placeholder {
 * {
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden ;
+}
 body {
-  overflow-x: hidden;
+  overflow-x: hidden ;
   font-family: 'AvenirNextCyr_Reg', sans-serif;
   font-size: 16px;
   background-color: #242221;
