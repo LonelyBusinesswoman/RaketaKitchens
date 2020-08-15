@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <!-- CSS style -->
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=5">
-    <link rel="stylesheet" type="text/css" href="css/adapt.css?v=5">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=6">
+    <link rel="stylesheet" type="text/css" href="css/adapt.css?v=6">
     
 </head>
 <body>
@@ -97,7 +97,7 @@
             </div>
         </div>
         <!-- SECOND screen-->
-        <div class="second_screen screen">
+        <div id = "delivery_only" class="second_screen screen">
             <!-- mint img -->
             <img src="img/mint.png" class="mint_back" alt="back">
             <!-- strawberry img -->
@@ -112,7 +112,7 @@
                 <!-- text and button -->
                 <div class="text_and_button">
                     <h2>Advantages of <span>delivery-only</span></h2>
-                    <a href="#" class="action_btn transp_btn scroll_to_delivery">
+                    <a href="#" class="action_btn transp_btn scroll_to_why_delivery">
                         <p>Why delivery-only</p>
                     </a>
                 </div>
@@ -150,7 +150,7 @@
             </div>
             <!-- line with serv_block -->
             <div class="orange_line">
-                <div  id = "delivery_only" class="service absolute_line_block container">
+                <div  id = "why_delivery_only" class="service absolute_line_block container">
                     <p class="serv_text absolute_main_text">We serve those that serve others</p>
                     <span class="descr">RaketaKitchenes allows me to experiment much more freely because the risk of failure is significantly reduced.”</span>
                 </div>
@@ -190,9 +190,9 @@
                     <div class="plashka_wrap">
                         <div class="plashka_content">
                             <!-- ears -->
-                            <img  class ="dec_1" src="img/des_element_1.svg" alt="ear">
-                            <img  class ="dec_2" src="img/des_element_2.svg" alt="ear">
-                            <p class="review">RaketaKitchenes allows me to <br> experiment much more freely because  <br> the risk of failure is significantly reduced.”</p>
+                            <img  class =" dec dec_1" src="img/des_element_1.svg" alt="ear">
+                            <img  class =" dec dec_2" src="img/des_element_2.svg" alt="ear">
+                            <p class="review">RaketaKitchenes allows me to  experiment much more freely because  the risk of failure is significantly reduced.”</p>
                             <span class="author">Eric Greenspan</span>
                         </div>
                     </div>
@@ -204,9 +204,9 @@
                     <div class="plashka_wrap">
                         <div class="plashka_content">
                             <!-- ears -->
-                            <img  class ="dec_1" src="img/des_element_1.svg" alt="ear">
-                            <img  class ="dec_2" src="img/des_element_2.svg" alt="ear">
-                            <p class="review">RaketaKitchenes allows me to <br> experiment much more freely because  <br> the risk of failure is significantly reduced.”</p>
+                            <img  class =" dec dec_1" src="img/des_element_1.svg" alt="ear">
+                            <img  class =" dec dec_2" src="img/des_element_2.svg" alt="ear">
+                            <p class="review">RaketaKitchenes allows me to  experiment much more freely because  the risk of failure is significantly reduced.”</p>
                             <span class="author">Eric Greenspan</span>
                         </div>
                     </div>
@@ -218,9 +218,9 @@
                     <div class="plashka_wrap">
                         <div class="plashka_content">
                             <!-- ears -->
-                            <img  class ="dec_1" src="img/des_element_1.svg" alt="ear">
-                            <img  class ="dec_2" src="img/des_element_2.svg" alt="ear">
-                            <p class="review">RaketaKitchenes allows me to <br> experiment much more freely because  <br> the risk of failure is significantly reduced.”</p>
+                            <img  class =" dec dec_1" src="img/des_element_1.svg" alt="ear">
+                            <img  class =" dec dec_2" src="img/des_element_2.svg" alt="ear">
+                            <p class="review">RaketaKitchenes allows me to  experiment much more freely because  the risk of failure is significantly reduced.”</p>
                             <span class="author">Eric Greenspan</span>
                         </div>
                     </div>
@@ -306,7 +306,7 @@
             <div class="title">
                 <h2>the trend with <span>RaketaKitchens</span></h2>
             </div>
-            <a href="#get_start_popup" class="action_btn orange_btn get_start_popup">
+            <a href="#cv_popup" class="action_btn orange_btn get_start_popup">
                 <p>learn more</p>
                 <i class="fas fa-caret-right"></i>
             </a>
@@ -338,7 +338,7 @@
     
     <!-- scroll to top -->
     <div class="scroll_to_top">
-        <i class="fas fa-arrow-up"></i>
+        <img src="img/scroll_arrow.svg" alt="scroll">
     </div>
     <!-- 3d tour popup -->
     <div id="3d_popup" class="mfp-hide 3d_popup default_popup">
@@ -360,6 +360,23 @@
                 <input type="text" placeholder="Full name* (Required)">
                 <input type="email" placeholder="E-mail* (Required)">
                 <input type="tel" placeholder="Phone* (Required)">
+                <a href="#" class="action_btn orange_btn send_btn">
+                    <p>Send</p>
+                </a>
+            </form>
+        </div>
+    </div>
+    <!-- CV popup -->
+    <!-- get start popup -->
+    <div id="cv_popup" class="mfp-hide start_popup default_popup">
+        <div class="start_popup_wrap">
+            <p>CONTACT US TO START YOUR CAREER</p>
+            <form action="">
+                <input type="text" placeholder="Full name* (Required)">
+                <input type="email" placeholder="E-mail* (Required)">
+                <input type="tel" placeholder="Phone* (Required)">
+                <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-" data-multiple-caption="{count} files selected" multiple />
+				<label for="file-1"><span>Upload file* (Required)&hellip;</span></label>
                 <a href="#" class="action_btn orange_btn send_btn">
                     <p>Send</p>
                 </a>

@@ -1,13 +1,66 @@
-@media (min-width: 1920px) and (max-width: 2560px) {
+@media (min-width: 1800px) and (max-width: 2560px) {
   .title h2 {
-    font-size: 45px;
+    font-size: 48px;
+    line-height: 65px;
+  }
+  .title .round {
+    margin: 18px;
+    height: 52px;
+    width: 52px;
+  }
+  .action_btn {
+    border-width: 3px;
+  }
+  .orange_btn {
+    padding: 28px 64px;
+  }
+  .orange_btn p {
+    font-size: 18px;
+  }
+  .transp_btn {
+    margin-top: 10px;
+    padding: 18px 56px;
+  }
+  .transp_btn p {
+    font-size: 18px;
+  }
+  .default_popup {
+    width: 40%;
   }
   header nav {
     width: 35%;
   }
+  header li a {
+    font-size: 16px;
+  }
+  header .tour a {
+    font-size: 16px;
+  }
+  .first_screen .socials_block a {
+    margin-bottom: 70px;
+  }
+  .first_screen .socials_block .fab {
+    font-size: 26px;
+  }
+  .first_screen .languages_block li {
+    margin-bottom: 70px;
+  }
+  .first_screen .languages_block a {
+    font-size: 18px;
+  }
+  .first_screen .start .start_wrap {
+    margin-top: 14%;
+    margin-bottom: 12%;
+  }
+  .first_screen .start .delivery_text {
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 25px;
+  }
   .first_screen .start h1 {
     font-size: 70px;
     line-height: 90px;
+    margin-bottom: 80px;
   }
   .second_screen .icon {
     margin: 100px 0;
@@ -15,31 +68,90 @@
   .second_screen img {
     width: 100%;
   }
+  .second_screen .adv_text {
+    padding: 40px 0;
+  }
+  .second_screen .adv_text p {
+    font-size: 18px;
+  }
   .second_screen .serv_text {
     padding-top: 220px;
     font-size: 50px;
     line-height: 60px;
   }
   .second_screen .descr {
+    font-size: 24px;
+    line-height: 34px;
     padding-bottom: 200px;
   }
-  .third_screen .slider {
-    padding: 150px 0 ;
+  .third_screen .desktop_arrow {
+    width: 60px;
+    bottom: 18%;
   }
-  .third_screen .review,
-  .third_screen .author {
-    font-size: 30px;
+  .third_screen .slider {
+    padding: 100px 0 ;
   }
   .third_screen .slide_photo {
     max-height: 900px;
   }
+  .third_screen .dec {
+    top: -27%;
+    width: 70px;
+  }
+  .third_screen .plashka_content {
+    padding: 100px 60px 80px 60px;
+  }
+  .third_screen .review,
+  .third_screen .author {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .fourth_screen .partner .partner_name {
+    font-size: 48px;
+    line-height: 57px;
+  }
+  .fourth_screen .partner .partner_descr {
+    font-size: 20px;
+    line-height: 30px;
+  }
   .fourth_screen .benefit_text {
     margin: 200px 0 150px 0;
     margin-left: 12%;
+    font-size: 30px;
+  }
+  .fourth_screen .benefit_descr {
+    font-size: 18px;
+    line-height: 16px;
   }
   .fourth_screen .benefit_main_text {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 48px;
+    line-height: 57px;
+  }
+  .fifth_screen .stay {
+    font-size: 16px;
+  }
+  .fifth_screen .title h2 {
+    font-size: 70px;
+  }
+  footer {
+    padding-bottom: 12%;
+  }
+  footer .get_in_touch {
+    width: 40%;
+  }
+  footer .get_in_touch span {
+    width: 90%;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  footer .logo {
+    width: 40%;
+  }
+  footer form {
+    width: 100%;
+  }
+  footer input::placeholder {
+    font-size: 14px;
   }
 }
 @media (max-width: 1400px) {
@@ -54,26 +166,6 @@
   .container {
     width: 90%;
   }
-  header .logo,
-  header .tour {
-    width: 20%;
-  }
-  header nav {
-    width: 60%;
-    margin-left: 8%;
-    margin-right: 12%;
-  }
-  header .tour img {
-    width: 170%;
-  }
-  .first_screen .socials_block,
-  .first_screen .languages_block {
-    width: 5%;
-  }
-  .first_screen .start h1 {
-    width: 90%;
-    font-size: 70px;
-  }
   .title {
     align-items: flex-start;
   }
@@ -81,11 +173,59 @@
     flex-direction: column;
   }
   .title h2 {
-    width: 90%;
+    width: 80%;
     font-size: 40px;
   }
   .title .action_btn {
-    margin-top: 20px;
+    margin-top: 40px;
+  }
+  .orange_btn {
+    padding: 24px 68px;
+  }
+  .transp_btn {
+    padding: 18px 48px;
+  }
+  .transp_btn p {
+    font-size: 16px;
+  }
+  header .logo,
+  header .tour {
+    width: 20%;
+  }
+  header .tour img {
+    width: 170%;
+  }
+  header .tour a {
+    font-size: 16px;
+  }
+  header nav {
+    width: 60%;
+    margin-left: 8%;
+    margin-right: 12%;
+  }
+  header li a {
+    font-size: 16px;
+  }
+  .first_screen .get_started_block {
+    width: 80%;
+  }
+  .first_screen .socials_block,
+  .first_screen .languages_block {
+    width: 10%;
+  }
+  .first_screen .fab {
+    font-size: 25px;
+  }
+  .first_screen .languages_block a {
+    font-size: 16px;
+  }
+  .first_screen .start .start_wrap {
+    margin-top: 8%;
+    margin-bottom: 6%;
+  }
+  .first_screen .start h1 {
+    width: 90%;
+    font-size: 70px;
   }
   .second_screen .adv_text p {
     font-size: 15px;
@@ -97,8 +237,56 @@
   .second_screen .icon {
     margin: 80px 0;
   }
+  .second_screen .icon img {
+    width: 100%;
+  }
   .third_screen {
     margin-top: 35%;
+  }
+  .third_screen .desktop_arrow {
+    width: 55px;
+    bottom: 5%;
+  }
+  .third_screen .arrow_prev {
+    left: 18%;
+  }
+  .third_screen .arrow_next {
+    left: 24%;
+  }
+  .third_screen .slick-slide {
+    padding-bottom: 4%;
+  }
+  .third_screen .slider {
+    background: url(../img/roundLogo.svg) 20% 20% no-repeat;
+    background-size: 88%;
+    padding: 6% 0;
+    padding-bottom: 10%;
+  }
+  .third_screen .slider .plashka_wrap {
+    width: 50%;
+    left: 2%;
+    top: 70%;
+  }
+  .third_screen .slider .plashka_content {
+    padding: 100px 40px 60px 40px;
+  }
+  .third_screen .review {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .third_screen .dec {
+    position: absolute;
+    top: -20%;
+    width: 60px;
+  }
+  .third_screen .dec_1 {
+    left: 16%;
+  }
+  .third_screen .dec_2 {
+    left: 28%;
+  }
+  .fourth_screen {
+    margin-top: 15%;
   }
   .fourth_screen .partner img {
     min-height: 400px;
@@ -122,6 +310,7 @@
   .fourth_screen .action_btn {
     margin-left: 12%;
     margin-bottom: 120px;
+    width: 30%;
   }
   .fifth_screen {
     margin-top: 30%;
@@ -132,6 +321,9 @@
     width: 60%;
     margin: 60px auto;
   }
+  .fifth_screen .stay {
+    font-size: 18px;
+  }
   footer {
     margin-top: 15%;
     padding-bottom: 100px;
@@ -139,8 +331,12 @@
   footer .footer_wrap {
     flex-direction: column;
   }
-  footer .logo {
-    width: 50%;
+  footer .get_in_touch {
+    width: 70%;
+  }
+  footer .get_in_touch span {
+    font-family: 'AvenirNextCyr_Bold', sans-serif;
+    width: 60%;
   }
   footer .contacts {
     margin-top: 60px;
@@ -148,19 +344,16 @@
     justify-content: space-between;
     width: 50%;
   }
+  footer .contacts .tel_contact {
+    font-size: 24px;
+  }
   footer .contacts a {
     margin-bottom: 0;
     line-height: 25px;
     color: #fff;
   }
-  .fourth_screen .action_btn {
-    width: 30%;
-  }
   footer .back3 {
     width: 70%;
-  }
-  footer .contacts .tel_contact {
-    font-size: 24px;
   }
   .second_wrap .line_6 {
     top: 42%;
@@ -168,17 +361,14 @@
   .second_wrap .line_7 {
     top: 48%;
   }
-  .desktop_arrow {
-    bottom: 0;
-  }
-  .arrow_next {
-    left: 20%;
-  }
   .second_screen .orange_line {
     margin-top: 10%;
   }
 }
 @media (max-width: 1000px) {
+  header .logo {
+    width: 30%;
+  }
   header nav,
   header .tour {
     display: none;
@@ -197,11 +387,8 @@
   .second_screen .mint_back {
     width: 25%;
   }
-  .second_screen img {
+  .second_screen .icon img {
     width: 100%;
-  }
-  .second_screen .descr {
-    opacity: 1;
   }
   .second_screen .orange_line {
     background-color: none;
@@ -213,6 +400,30 @@
     min-height: 500px;
     max-height: 500px;
   }
+  .second_screen .serv_text {
+    width: 50%;
+  }
+  .second_screen .descr {
+    opacity: 1;
+    width: 60%;
+  }
+  .third_screen .arrow_prev {
+    left: 12%;
+  }
+  .third_screen .review {
+    font-size: 16px;
+  }
+  .third_screen .slick-slide {
+    margin-bottom: 6%;
+  }
+  .third_screen .dec {
+    position: absolute;
+    top: -19%;
+    width: 50px;
+  }
+  .third_screen .dec_1 {
+    left: 10%;
+  }
   .fourth_screen .partners {
     grid-template-columns: 1fr;
     grid-row-gap: 40px;
@@ -223,23 +434,18 @@
   }
   .fourth_screen .orange_line {
     margin-top: 75%;
-  }
-  .fourth_screen .benefit_main_text {
-    font-size: 40px;
-  }
-  .third_screen .review {
-    font-size: 16px;
-  }
-  .fifth_screen {
-    margin-top: 10%;
-  }
-  .fourth_screen .orange_line {
     flex-direction: column;
     background-color: inherit;
   }
   .fourth_screen .absolute_line_block {
     width: 100%;
     position: static;
+  }
+  .fourth_screen .benefit_main_text {
+    font-size: 40px;
+  }
+  .fifth_screen {
+    margin-top: 10%;
   }
   .fifth_screen .title h2 {
     font-size: 55px;
@@ -254,12 +460,6 @@
   footer .contacts {
     width: 80%;
   }
-  .second_screen .serv_text {
-    width: 50%;
-  }
-  .second_screen .descr {
-    width: 60%;
-  }
 }
 @media (max-width: 760px) {
   .default_popup {
@@ -270,8 +470,39 @@
     display: flex;
     flex-direction: column;
   }
+  .title {
+    width: 90%;
+  }
+  .title h2 {
+    width: 92%;
+    font-size: 42px;
+    line-height: 65px;
+  }
+  .title .round {
+    margin: 20px;
+    height: 56px;
+    width: 56px;
+  }
+  header {
+    width: 90%;
+  }
   header .logo {
     width: 40%;
+  }
+  .first_screen .get_started_block {
+    width: 90%;
+  }
+  .first_screen .get_started_block .start_wrap {
+    margin-top: 16%;
+    margin-bottom: 14%;
+  }
+  .first_screen .get_started_block .start .delivery_text {
+    font-size: 48px;
+    line-height: 59px;
+  }
+  .first_screen .get_started_block .start h1 {
+    font-size: 72px;
+    line-height: 98px;
   }
   .first_screen .welcome_block {
     display: none;
@@ -279,27 +510,61 @@
   .first_screen .start {
     width: 100%;
   }
+  .second_screen .orange_line {
+    margin: 0%;
+    margin-top: 30%;
+  }
+  .second_screen .service {
+    min-height: 450px;
+    max-height: 450px;
+  }
+  .second_screen .serv_text {
+    width: 50%;
+    font-size: 48px;
+    line-height: 56px;
+    padding-top: 100px;
+  }
+  .second_screen .round::after {
+    height: 300vh;
+  }
+  .third_screen .round::before {
+    height: 160vh;
+  }
+  .third_screen .round::after {
+    height: 160vh;
+  }
+  .third_screen .slick-slide {
+    padding: 100px 0;
+  }
+  .third_screen .desktop_arrow {
+    bottom: 0%;
+  }
   .third_screen .slider {
     width: 100%;
+    background: url(../img/roundLogo.svg) -400% 19% no-repeat;
+    background-size: 95%;
   }
-  .third_screen .plashka_wrap {
-    width: 70%;
+  .third_screen .slider .plashka_wrap {
+    width: 90%;
     padding: 30px;
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 80%;
+    top: 95%;
   }
-  .slick-slide {
-    padding: 100px 0;
+  .third_screen .slider .plashka_content {
+    padding: 80px 40px 60px 40px;
+  }
+  .third_screen .slider .review {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .fourth_screen .round::before {
+    height: 160vh;
   }
   .fourth_screen .action_btn {
     width: 40%;
-  }
-  .third_screen .slider {
-    background: url(../img/roundLogo.svg) -15% 60% no-repeat;
-    background-size: 65%;
   }
   .fourth_screen .orange_line {
     margin-top: 95%;
@@ -308,11 +573,28 @@
     font-size: 30px;
     line-height: 35px;
   }
-  .second_screen .orange_line {
-    margin: 30% 0;
+  .fourth_screen .partner .partner_name {
+    font-size: 48px;
+    line-height: 57px;
+  }
+  footer .get_in_touch span {
+    font-size: 14px;
+    width: 90%;
   }
 }
 @media (max-width: 650px) {
+  .third_screen {
+    margin-top: 45%;
+  }
+  .third_screen .slide_photo {
+    width: 100%;
+  }
+  .third_screen .plashka_wrap {
+    width: 90%;
+  }
+  .fourth_screen .action_btn {
+    width: 60%;
+  }
   .fourth_screen .benefit_text {
     margin: 70px 0 30px 0;
     margin-left: 12%;
@@ -324,16 +606,27 @@
   .slick-slide {
     padding: 140px 0;
   }
-  .third_screen .slide_photo {
-    width: 100%;
-  }
-  .third_screen .plashka_wrap {
-    width: 90%;
-  }
 }
 @media (max-width: 550px) {
   .title {
-    flex-direction: column;
+    width: 98%;
+  }
+  .title .circle {
+    border-width: 3px;
+  }
+  .title .round {
+    margin: 10px;
+    height: 38px;
+    width: 38px;
+    border-width: 3px;
+  }
+  .title .text_and_button {
+    margin-top: 40px;
+    margin-left: 5px;
+  }
+  .title h2 {
+    font-size: 28px;
+    line-height: 35px;
   }
   .default_popup {
     width: 95%;
@@ -342,122 +635,243 @@
     width: 140px;
     margin-top: 20px;
   }
-  .first_screen .start .start_wrap {
-    margin-bottom: 20%;
+  .orange_btn {
+    padding: 17px 29px;
+  }
+  .orange_btn p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .transp_btn {
+    padding: 10px 22px;
+  }
+  .transp_btn p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  header {
+    margin-top: 20px;
   }
   header .logo {
-    width: 60%;
+    width: 70%;
   }
-  .first_screen .start .delivery_text {
+  .first_screen {
+    margin-top: 25px;
+  }
+  .first_screen .start .start_wrap {
+    margin-bottom: 25%;
+  }
+  .first_screen .get_started_block {
+    width: 100%;
+  }
+  .first_screen .get_started_block .start h1 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+  .first_screen .get_started_block .start .delivery_text {
     font-size: 24px;
+    line-height: 30px;
   }
-  .get_started_block {
-    width: 100%;
+  .second_screen .mint_back {
+    width: 64%;
+    right: -25%;
+    top: 8%;
   }
-  .first_screen .start h1 {
-    font-size: 40px;
-    line-height: 55px;
-  }
-  .title {
-    width: 90%;
-  }
-  .title h2 {
-    width: 100%;
-    font-size: 32px;
+  .second_screen .advantages_block {
+    margin-top: 50px;
+    grid-row-gap: 15px;
   }
   .second_screen .icon {
-    margin: 50px 0;
+    margin: 30px 0;
   }
-  .fifth_screen .title h2 {
-    font-size: 25px;
-    line-height: 30px;
+  .second_screen .icon img {
     width: 80%;
+  }
+  .second_screen .adv_text {
+    padding: 20px 0;
   }
   .second_screen .adv_text p {
     font-size: 12px;
-    width: 85%;
+    width: 80%;
+    line-height: 15px;
+    letter-spacing: 2px;
   }
-  .title .text_and_button {
+  .second_screen .orange_line {
+    margin-top: 35%;
+  }
+  .second_screen .service {
+    min-height: 280px;
+    max-height: 280px;
+  }
+  .second_screen .serv_text {
+    width: 60%;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+    margin-left: 5%;
+    padding-top: 60px;
+  }
+  .second_screen .descr {
+    width: 90%;
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 5%;
+  }
+  .second_screen .round::after {
+    height: 180vh;
+  }
+  .third_screen {
+    margin-top: 60%;
+  }
+  .third_screen .title .circle {
+    border-color: #403e3D;
+  }
+  .third_screen .round::before {
+    background-color: #403e3D;
+  }
+  .third_screen .round::after {
+    background-color: #403e3D;
+    height: 60vh;
+  }
+  .third_screen .slick-slide {
+    padding: 20px 0;
+    padding-bottom: 140px;
+  }
+  .third_screen .slider {
+    background-image: unset;
+  }
+  .third_screen .slider .desktop_arrow {
+    bottom: 5%;
+  }
+  .third_screen .slider .arrow_next {
+    right: 30%;
+    left: unset;
+  }
+  .third_screen .slider .arrow_prev {
+    left: 30%;
+  }
+  .third_screen .slider .dec {
+    top: -20%;
+    width: 30px;
+  }
+  .third_screen .slider .dec_1 {
+    left: 63%;
+  }
+  .third_screen .slider .dec_2 {
+    left: 75%;
+  }
+  .third_screen .slider .plashka_wrap {
+    padding: 20px;
+  }
+  .third_screen .slider .plashka_content {
+    padding: 30px 15px;
+    align-items: flex-start;
+  }
+  .third_screen .slider .slide_photo {
+    max-height: 400px;
+  }
+  .third_screen .slider .review {
+    text-align: left;
     width: 100%;
-    margin-left: 10px;
-    font-size: 30px;
+    font-size: 16px;
+    line-height: 25px;
   }
-  .fourth_screen .partner img {
-    max-height: 200px;
-    min-height: 200px;
+  .third_screen .slider .author {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: -0.01em;
+  }
+  .fourth_screen .partners {
+    grid-row-gap: 15px;
+    margin-top: 30px;
   }
   .fourth_screen .partner .partner_name {
-    font-size: 26px;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: -0.01em;
+    margin-bottom: 10px;
   }
-  .fourth_screen .partner .partner_text {
-    width: 75%;
+  .fourth_screen .partner img {
+    max-height: 180px;
+    min-height: 180px;
+  }
+  .fourth_screen .partner .partner_descr {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .fourth_screen .action_btn {
+    width: 65%;
+    margin-left: 6%;
+    margin-bottom: 80px;
+  }
+  .fourth_screen .orange_line {
+    margin-top: 115%;
+  }
+  .fourth_screen .benefit_text {
+    margin: 50px 0 30px 0;
+    margin-left: 6%;
+    width: 80%;
+  }
+  .fourth_screen .benefit_descr {
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 3.2px;
+  }
+  .fourth_screen .benefit_main_text {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+  }
+  .fifth_screen {
+    margin-top: 70px;
+  }
+  .fifth_screen .title h2 {
+    font-size: 40px;
+    line-height: 45px;
+    width: 95%;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+  .fifth_screen .stay {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  footer {
+    margin-top: 30%;
+    padding-bottom: 40px;
+  }
+  footer .back3 {
+    width: 100%;
+  }
+  footer .logo {
+    width: 65%;
   }
   footer .footer_wrap {
     width: 90%;
   }
+  footer .get_in_touch span {
+    padding: 20px 0;
+  }
   footer .contacts {
     flex-direction: column;
+    margin-top: 35px;
   }
   footer .contacts .tel_contact {
     margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 25px;
   }
-  .second_screen .service {
-    position: static;
-    width: 100%;
-    min-height: 300px;
-    max-height: 300px;
+  footer input::placeholder {
+    font-size: 15px;
+  }
+  footer button {
+    font-size: 16px;
   }
   .absolute_main_text {
     width: 60%;
     font-size: 20px;
     line-height: 30px;
-  }
-  .second_screen .serv_text {
-    padding-top: 20px;
-  }
-  .second_screen .descr {
-    width: 80%;
-  }
-  .fourth_screen .benefit_text {
-    margin: 30px 0 30px 0;
-    margin-left: 12%;
-    width: 80%;
-  }
-  .fourth_screen .benefit_main_text {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .fourth_screen .action_btn {
-    width: 80%;
-  }
-  .fourth_screen .orange_line {
-    margin-top: 115%;
-  }
-  .arrow_next {
-    right: 30%;
-    left: unset;
-  }
-  .arrow_prev {
-    left: 30%;
-  }
-  .third_screen .plashka_content {
-    padding: 10px;
-  }
-  .third_screen .review {
-    width: 71%;
-    line-height: 30px;
-    font-size: 14px;
-  }
-  .third_screen .plashka_wrap {
-    padding: 20px;
-  }
-  .third_screen .review {
-    width: 100%;
-  }
-  .third_screen .slide_photo {
-    max-height: 400px;
-  }
-  .fourth_screen .absolute_line_block {
-    min-height: 350px;
   }
 }

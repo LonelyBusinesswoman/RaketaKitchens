@@ -73,15 +73,14 @@
 @dark_grey: #242221;
 // BUTTONS
 .action_btn{
-    border: 3px solid #EB673F;
+    border: 2px solid #EB673F;
     border-radius: 100px;
     display: inline-block;
     text-align: center;
 }
 .orange_btn{
-    padding: 18px 40px;
+    padding: 18px 45px;
     background: rgba(235, 103, 63, 0.3);
-    border: 3px solid #EB673F;
     box-sizing: border-box;
     backdrop-filter: blur(10px);
     transition: all ease 0.2s;
@@ -91,26 +90,26 @@
         .Demi();
         font-size: 14px;
         line-height: 16px;
-        letter-spacing: 3.4px;
+        letter-spacing: 3px;
         color: #FFFFFF;
-        margin-right: 10px;
+        margin-right: 6px;
     }
     .fas{
         color: #fff;
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 .transp_btn{
     padding: 10px 40px;
-    border: 3px solid #EB673F;
     box-sizing: border-box;
     transition: all ease 0.2s;
     p{
         text-transform: uppercase;
         display: inline;
-        .Demi();
-        font-size: 14px;
-        line-height: 14px;
+        .Bold();
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 16px;
         letter-spacing: 3.4px;
         color: @orange;
     }
@@ -138,8 +137,9 @@
 	bottom: 0px;
 	right: 0px;
 	z-index: 50;
-    .fas{
-        font-size: 20px;
+    img{
+        width: 22px;
+        transform: rotate(180deg)
     }
 }
 // TITLE
@@ -160,9 +160,9 @@
         border: 2px solid #333030;
     }
     .round{
-        margin: 12px;
-        height: 40px;
-        width: 40px;
+        margin: 14px;
+        height: 46px;
+        width: 46px;
         border: 2px solid @orange;
         background: rgba(235, 103, 63, 0.1);
         position: relative;
@@ -179,7 +179,7 @@
     // text and button
     .text_and_button{
         width: 90%;
-        margin-left: 50px;
+        margin-left: 40px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -187,12 +187,15 @@
     h2{
         width: 60%;
         .Bold();
-        font-size: 34px;
+        font-size: 36px;
         line-height: 45px;
         color: #FFFFFF;
         span{
             color: @orange;
         }
+    }
+    .action_btn{
+        margin-right: 4%;
     }
 }
 // POPUP SETTINGS
@@ -269,15 +272,15 @@ input:focus:-ms-input-placeholder {
 .desktop_arrow{
     position: absolute;
     bottom: 14%;
-    width: 50px;
+    width: 45px;
     z-index: 10;
     cursor: pointer;
 }
-.arrow_next{
-    left: 16%;
-}
 .arrow_prev{
-    left: 10%;
+    left: 12%;
+}
+.arrow_next{
+    left: 17%;
 }
 // Popup get start 
 .default_popup{
@@ -304,7 +307,7 @@ input:focus:-ms-input-placeholder {
         display: flex;
         flex-direction: column;
     }
-    input{
+    input, label{
         padding-bottom: 10px;
         margin-bottom: 50px;
         border-bottom: 1px solid @grey;
@@ -318,11 +321,34 @@ input:focus:-ms-input-placeholder {
         }
     }
 }
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    display: inline-block;
+    color: @grey;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    border-bottom: 1px solid #fff;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+.inputfile + label * {
+	pointer-events: none;
+}
 // SETTINGS
 *{
     box-sizing: border-box;
 }
 body{
+    overflow-x: hidden;
     .Reg();
     font-size: 16px;
     background-color: @dark_grey;
@@ -398,10 +424,10 @@ body{
         top: 20%;
     }
     .line_6{
-        top: 60%;
+        top: 55%;
     }
     .line_7{
-        top: 70%;
+        top: 65%;
     }
     .line_8{
         top: 45%;
@@ -422,7 +448,7 @@ header{
     width: 80%;
     display: flex;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 45px;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -436,7 +462,7 @@ header{
     nav{
         width: 40%;
         display: flex;
-        margin-left: 2%;
+        margin-left: 0%;
         margin-right: 12%;
     }
     ul{
@@ -446,9 +472,9 @@ header{
     }
     li{
         a{
-            .Bold();
+            .Demi();
             color: @grey;
-            line-height: 25px;
+            line-height: 20px;
             position: relative;
             cursor: pointer;
             line-height: 1;
@@ -479,11 +505,10 @@ header{
             cursor: pointer;
             z-index: 2;
             .Demi();
-            font-weight: 750;
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 12px;
+            line-height: 18px;
             color:@orange;
-            letter-spacing: 3.2px;
+            letter-spacing: 3.0px;
             text-transform: uppercase;
         }
         img{
@@ -497,16 +522,19 @@ header{
     // burger
     .mobile_menu{
         cursor: pointer;
-        width: 35px;
+        width: 26px;
         display: none;
         flex-direction: column;
         .burg{
             width: 100%;
-            height: 3px;
-            margin-bottom: 6px;
+            height: 2px;
+            margin-bottom: 5px;
             box-sizing: border-box;
             border-radius: 10px;
             background-color: #C4C4C4;
+        }
+        .burg:last-child{
+            margin-bottom: 0;
         }
     }
 }
@@ -561,7 +589,7 @@ header{
 }
 // FIRST SCREEN
 .first_screen{
-    margin-top: 50px;
+    margin-top: 45px;
     display: flex;
     align-items: stretch;
     z-index: 2;
@@ -577,10 +605,13 @@ header{
             text-align: center;
             margin-bottom: 50px;
         }
+        a:last-child{
+            margin-bottom: 0;
+        }
     }
     .fab{
        color: @grey;
-       font-size: 18px;
+       font-size: 19px;
        transition: all ease 0.2s;
     }
     .fab:hover{
@@ -592,10 +623,13 @@ header{
             margin-bottom: 50px;
             text-align: center;
         }
+        li:last-child{
+            margin-bottom: 0;
+        }
         a{
             display: inline;
             position: relative;
-            .Demi();
+            .Bold();
             font-size: 12px;
             line-height: 20px;
             color: @grey;
@@ -606,7 +640,7 @@ header{
             position: absolute;
             left: 0; 
             width: 0;
-            height: 2px; 
+            height: 1px; 
             background-color: @orange;
             content: "";
             transition: width 0.2s ease-out;
@@ -639,7 +673,7 @@ header{
         p{
             transform: rotate(-90deg);
             .Demi();
-            font-size: 26px;
+            font-size: 20px;
             line-height: 32px;
             color: #FF845E;
         }
@@ -652,12 +686,13 @@ header{
         flex-direction: column;
         .start_wrap{
             margin-top: 12%;
-            margin-bottom: 12%;
+            margin-bottom: 10%;
             margin-left: 6%;
         }
         .delivery_text{
+            .Light();
             margin-bottom: 15px;
-            font-size: 38px;
+            font-size: 36px;
             line-height: 59px;
             letter-spacing: -0.01em;
         }
@@ -665,8 +700,8 @@ header{
             .Bold();
             width: 70%;
             font-size: 54px;
-            line-height: 80px;
-            margin-bottom: 40px;
+            line-height: 76px;
+            margin-bottom: 45px;
             span{
                 color: @orange;
             }
@@ -675,7 +710,7 @@ header{
 }
 // SECOND SCREEN 
 .second_screen{
-    margin-top: 140px;
+    margin-top: 8%;
     flex-direction: column;
     position: relative; 
     // mint
@@ -705,7 +740,7 @@ header{
         position: absolute;
         width: 2px;
         background-color: #333030;
-        height: 120vh;
+        height: 140vh;
         top: 20px;
         z-index: -1;
     }
@@ -719,9 +754,10 @@ header{
     }
     .icon{
         margin: 60px 0;
+        text-align: center;
     }
     img{
-        width: 80%;
+        width: 75%;
     }
     .adv_text{
         width: 100%;
@@ -730,10 +766,12 @@ header{
         p{
             text-align: center;
             .Demi();
-            font-size: 16px;
+            font-size: 14px;
             line-height: 22px;
+            letter-spacing: 2.2px;
         }
     }
+    // absolute block
     .service{
         z-index: 3;
         background-image: url(../img/serving.png);
@@ -745,6 +783,7 @@ header{
         margin-left: 12%;
     }
     .descr{
+        .Light();
         z-index: 3;
         padding-bottom: 120px;
         margin-left: 12%;
@@ -800,7 +839,7 @@ header{
     }
     .slide_photo{
         width: 60%;
-        max-height: 600px;
+        max-height: 700px;
         object-fit: cover;
     }
     .plashka_wrap{
@@ -813,7 +852,7 @@ header{
         background-color: #333030;
     }
     .plashka_content{
-        padding: 40px;
+        padding: 60px 40px 40px 40px;
         position: relative;
         display: flex;
         justify-content: flex-end;
@@ -821,25 +860,24 @@ header{
         flex-direction: column;
         background-color: @dark_grey;
     }
-    .dec_1{
+    .dec{
         position: absolute;
-        top: -27%;
-        left: 20%;
+        top: -28%;
         width: 50px;
     }
+    .dec_1{
+        left: 20%;
+    }
     .dec_2{
-        position: absolute;
-        top: -27%;
         left: 30%;
-        width: 50px;
     }
     .review{
         width: 100%;
         text-align: right;
         margin-bottom: 30px;
-        .Reg();
-        font-size: 22px;
-        line-height: 44px;
+        .Light();
+        font-size: 24px;
+        line-height: 34px;
     }
     .author{
         .Demi();
@@ -852,7 +890,7 @@ header{
 }
 // FOURTH SCREEN
 .fourth_screen{
-    margin-top: 10%;
+    margin-top: 2%;
     flex-direction: column;
     z-index: 20;
     .round::before{
@@ -893,6 +931,7 @@ header{
             transition: all ease 0.3s;
             margin-bottom: 15px;
             margin-top: 25%;
+            line-height: 40px;
         }
         .partner_descr{
             .Light();
@@ -900,14 +939,14 @@ header{
             overflow: hidden;
             height: 0 !important;
             font-size: 16px;
-            line-height: 30px;
+            line-height: 26px;
             letter-spacing: -0.01em;
             transition: opacity 0.5s ease-out;
         }
     }
     .partner:hover{
         .partner_name{
-            transform: scale(0.9);
+            transform: scale(0.8);
             margin-top: 0%;
         }
         .partner_descr{
@@ -928,7 +967,7 @@ header{
         align-items: center;
     }
     .benefit_text{
-        margin: 130px 0 110px 0;
+        margin: 14% 0 12% 0;
         margin-left: 12%;
         width: 60%;
     }
@@ -941,7 +980,7 @@ header{
     }
     .benefit_main_text{
         width: 60%;
-        margin-top: 30px;
+        margin-top: 15px;
     }
     .action_btn{
         width: 20%;
@@ -965,7 +1004,7 @@ header{
         width: 100%;
         h2{
             width: 100%;
-            margin: 60px 0 ;
+            margin: 2% 0 4% 0;
             font-size: 60px;
             text-align: center;
         }
@@ -1043,7 +1082,7 @@ footer{
       .contacts{
           display: flex;
           flex-direction: column;
-          width: 25%;
+          width: 28%;
           a{
               margin-bottom: 20px;
               .Bold();

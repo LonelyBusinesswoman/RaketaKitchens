@@ -34,15 +34,14 @@
   font-style: normal;
 }
 .action_btn {
-  border: 3px solid #EB673F;
+  border: 2px solid #EB673F;
   border-radius: 100px;
   display: inline-block;
   text-align: center;
 }
 .orange_btn {
-  padding: 18px 40px;
+  padding: 18px 45px;
   background: rgba(235, 103, 63, 0.3);
-  border: 3px solid #EB673F;
   box-sizing: border-box;
   backdrop-filter: blur(10px);
   transition: all ease 0.2s;
@@ -53,26 +52,26 @@
   font-family: 'AvenirNextCyr_Demi', sans-serif;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 3.4px;
+  letter-spacing: 3px;
   color: #FFFFFF;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 .orange_btn .fas {
   color: #fff;
-  font-size: 15px;
+  font-size: 12px;
 }
 .transp_btn {
   padding: 10px 40px;
-  border: 3px solid #EB673F;
   box-sizing: border-box;
   transition: all ease 0.2s;
 }
 .transp_btn p {
   text-transform: uppercase;
   display: inline;
-  font-family: 'AvenirNextCyr_Demi', sans-serif;
-  font-size: 14px;
-  line-height: 14px;
+  font-family: 'AvenirNextCyr_Bold', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
   letter-spacing: 3.4px;
   color: #EB673F;
 }
@@ -101,8 +100,9 @@
   right: 0px;
   z-index: 50;
 }
-.scroll_to_top .fas {
-  font-size: 20px;
+.scroll_to_top img {
+  width: 22px;
+  transform: rotate(180deg);
 }
 .title {
   z-index: 3;
@@ -122,9 +122,9 @@
   border: 2px solid #333030;
 }
 .title .round {
-  margin: 12px;
-  height: 40px;
-  width: 40px;
+  margin: 14px;
+  height: 46px;
+  width: 46px;
   border: 2px solid #EB673F;
   background: rgba(235, 103, 63, 0.1);
   position: relative;
@@ -140,7 +140,7 @@
 }
 .title .text_and_button {
   width: 90%;
-  margin-left: 50px;
+  margin-left: 40px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -148,12 +148,15 @@
 .title h2 {
   width: 60%;
   font-family: 'AvenirNextCyr_Bold', sans-serif;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 45px;
   color: #FFFFFF;
 }
 .title h2 span {
   color: #EB673F;
+}
+.title .action_btn {
+  margin-right: 4%;
 }
 .mfp-bg {
   background: none;
@@ -221,15 +224,15 @@ input:focus:-ms-input-placeholder {
 .desktop_arrow {
   position: absolute;
   bottom: 14%;
-  width: 50px;
+  width: 45px;
   z-index: 10;
   cursor: pointer;
 }
-.arrow_next {
-  left: 16%;
-}
 .arrow_prev {
-  left: 10%;
+  left: 12%;
+}
+.arrow_next {
+  left: 17%;
 }
 .default_popup {
   width: 50%;
@@ -256,7 +259,8 @@ input:focus:-ms-input-placeholder {
   display: flex;
   flex-direction: column;
 }
-.default_popup input {
+.default_popup input,
+.default_popup label {
   padding-bottom: 10px;
   margin-bottom: 50px;
   border-bottom: 1px solid #8A827F;
@@ -267,10 +271,34 @@ input:focus:-ms-input-placeholder {
 .default_popup a p {
   margin-right: 0;
 }
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+  display: inline-block;
+  color: #8A827F;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+  border-bottom: 1px solid #fff;
+}
+.inputfile + label {
+  cursor: pointer;
+  /* "hand" cursor */
+}
+.inputfile + label * {
+  pointer-events: none;
+}
 * {
   box-sizing: border-box;
 }
 body {
+  overflow-x: hidden;
   font-family: 'AvenirNextCyr_Reg', sans-serif;
   font-size: 16px;
   background-color: #242221;
@@ -356,12 +384,12 @@ body {
 .first_wrap .line_6,
 .second_wrap .line_6,
 .third_wrap .line_6 {
-  top: 60%;
+  top: 55%;
 }
 .first_wrap .line_7,
 .second_wrap .line_7,
 .third_wrap .line_7 {
-  top: 70%;
+  top: 65%;
 }
 .first_wrap .line_8,
 .second_wrap .line_8,
@@ -381,7 +409,7 @@ header {
   width: 80%;
   display: flex;
   align-self: center;
-  margin-top: 50px;
+  margin-top: 45px;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -395,7 +423,7 @@ header .logo img {
 header nav {
   width: 40%;
   display: flex;
-  margin-left: 2%;
+  margin-left: 0%;
   margin-right: 12%;
 }
 header ul {
@@ -404,9 +432,9 @@ header ul {
   justify-content: space-between;
 }
 header li a {
-  font-family: 'AvenirNextCyr_Bold', sans-serif;
+  font-family: 'AvenirNextCyr_Demi', sans-serif;
   color: #8A827F;
-  line-height: 25px;
+  line-height: 20px;
   position: relative;
   cursor: pointer;
   line-height: 1;
@@ -436,11 +464,10 @@ header .tour a {
   cursor: pointer;
   z-index: 2;
   font-family: 'AvenirNextCyr_Demi', sans-serif;
-  font-weight: 750;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 18px;
   color: #EB673F;
-  letter-spacing: 3.2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 header .tour img {
@@ -452,17 +479,20 @@ header .tour img {
 }
 header .mobile_menu {
   cursor: pointer;
-  width: 35px;
+  width: 26px;
   display: none;
   flex-direction: column;
 }
 header .mobile_menu .burg {
   width: 100%;
-  height: 3px;
-  margin-bottom: 6px;
+  height: 2px;
+  margin-bottom: 5px;
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #C4C4C4;
+}
+header .mobile_menu .burg:last-child {
+  margin-bottom: 0;
 }
 .mobile {
   display: block;
@@ -513,7 +543,7 @@ header .mobile_menu .burg {
   right: 0%;
 }
 .first_screen {
-  margin-top: 50px;
+  margin-top: 45px;
   display: flex;
   align-items: stretch;
   z-index: 2;
@@ -532,9 +562,13 @@ header .mobile_menu .burg {
   text-align: center;
   margin-bottom: 50px;
 }
+.first_screen .socials_block a:last-child,
+.first_screen .languages_block a:last-child {
+  margin-bottom: 0;
+}
 .first_screen .fab {
   color: #8A827F;
-  font-size: 18px;
+  font-size: 19px;
   transition: all ease 0.2s;
 }
 .first_screen .fab:hover {
@@ -544,10 +578,13 @@ header .mobile_menu .burg {
   margin-bottom: 50px;
   text-align: center;
 }
+.first_screen .languages_block li:last-child {
+  margin-bottom: 0;
+}
 .first_screen .languages_block a {
   display: inline;
   position: relative;
-  font-family: 'AvenirNextCyr_Demi', sans-serif;
+  font-family: 'AvenirNextCyr_Bold', sans-serif;
   font-size: 12px;
   line-height: 20px;
   color: #8A827F;
@@ -558,7 +595,7 @@ header .mobile_menu .burg {
   position: absolute;
   left: 0;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #EB673F;
   content: "";
   transition: width 0.2s ease-out;
@@ -590,7 +627,7 @@ header .mobile_menu .burg {
 .first_screen .welcome_block p {
   transform: rotate(-90deg);
   font-family: 'AvenirNextCyr_Demi', sans-serif;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 32px;
   color: #FF845E;
 }
@@ -603,12 +640,13 @@ header .mobile_menu .burg {
 }
 .first_screen .start .start_wrap {
   margin-top: 12%;
-  margin-bottom: 12%;
+  margin-bottom: 10%;
   margin-left: 6%;
 }
 .first_screen .start .delivery_text {
+  font-family: 'AvenirNextCyr_Light', sans-serif;
   margin-bottom: 15px;
-  font-size: 38px;
+  font-size: 36px;
   line-height: 59px;
   letter-spacing: -0.01em;
 }
@@ -616,14 +654,14 @@ header .mobile_menu .burg {
   font-family: 'AvenirNextCyr_Bold', sans-serif;
   width: 70%;
   font-size: 54px;
-  line-height: 80px;
-  margin-bottom: 40px;
+  line-height: 76px;
+  margin-bottom: 45px;
 }
 .first_screen .start h1 span {
   color: #EB673F;
 }
 .second_screen {
-  margin-top: 140px;
+  margin-top: 8%;
   flex-direction: column;
   position: relative;
 }
@@ -652,7 +690,7 @@ header .mobile_menu .burg {
   position: absolute;
   width: 2px;
   background-color: #333030;
-  height: 120vh;
+  height: 140vh;
   top: 20px;
   z-index: -1;
 }
@@ -666,9 +704,10 @@ header .mobile_menu .burg {
 }
 .second_screen .icon {
   margin: 60px 0;
+  text-align: center;
 }
 .second_screen img {
-  width: 80%;
+  width: 75%;
 }
 .second_screen .adv_text {
   width: 100%;
@@ -678,8 +717,9 @@ header .mobile_menu .burg {
 .second_screen .adv_text p {
   text-align: center;
   font-family: 'AvenirNextCyr_Demi', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 22px;
+  letter-spacing: 2.2px;
 }
 .second_screen .service {
   z-index: 3;
@@ -692,6 +732,7 @@ header .mobile_menu .burg {
   margin-left: 12%;
 }
 .second_screen .descr {
+  font-family: 'AvenirNextCyr_Light', sans-serif;
   z-index: 3;
   padding-bottom: 120px;
   margin-left: 12%;
@@ -744,7 +785,7 @@ header .mobile_menu .burg {
 }
 .third_screen .slide_photo {
   width: 60%;
-  max-height: 600px;
+  max-height: 700px;
   object-fit: cover;
 }
 .third_screen .plashka_wrap {
@@ -757,7 +798,7 @@ header .mobile_menu .burg {
   background-color: #333030;
 }
 .third_screen .plashka_content {
-  padding: 40px;
+  padding: 60px 40px 40px 40px;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -765,25 +806,24 @@ header .mobile_menu .burg {
   flex-direction: column;
   background-color: #242221;
 }
-.third_screen .dec_1 {
+.third_screen .dec {
   position: absolute;
-  top: -27%;
-  left: 20%;
+  top: -28%;
   width: 50px;
 }
+.third_screen .dec_1 {
+  left: 20%;
+}
 .third_screen .dec_2 {
-  position: absolute;
-  top: -27%;
   left: 30%;
-  width: 50px;
 }
 .third_screen .review {
   width: 100%;
   text-align: right;
   margin-bottom: 30px;
-  font-family: 'AvenirNextCyr_Reg', sans-serif;
-  font-size: 22px;
-  line-height: 44px;
+  font-family: 'AvenirNextCyr_Light', sans-serif;
+  font-size: 24px;
+  line-height: 34px;
 }
 .third_screen .author {
   font-family: 'AvenirNextCyr_Demi', sans-serif;
@@ -794,7 +834,7 @@ header .mobile_menu .burg {
   color: #EB673F;
 }
 .fourth_screen {
-  margin-top: 10%;
+  margin-top: 2%;
   flex-direction: column;
   z-index: 20;
 }
@@ -837,6 +877,7 @@ header .mobile_menu .burg {
   transition: all ease 0.3s;
   margin-bottom: 15px;
   margin-top: 25%;
+  line-height: 40px;
 }
 .fourth_screen .partner .partner_descr {
   font-family: 'AvenirNextCyr_Light', sans-serif;
@@ -844,12 +885,12 @@ header .mobile_menu .burg {
   overflow: hidden;
   height: 0 !important;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 26px;
   letter-spacing: -0.01em;
   transition: opacity 0.5s ease-out;
 }
 .fourth_screen .partner:hover .partner_name {
-  transform: scale(0.9);
+  transform: scale(0.8);
   margin-top: 0%;
 }
 .fourth_screen .partner:hover .partner_descr {
@@ -869,7 +910,7 @@ header .mobile_menu .burg {
   align-items: center;
 }
 .fourth_screen .benefit_text {
-  margin: 130px 0 110px 0;
+  margin: 14% 0 12% 0;
   margin-left: 12%;
   width: 60%;
 }
@@ -882,7 +923,7 @@ header .mobile_menu .burg {
 }
 .fourth_screen .benefit_main_text {
   width: 60%;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .fourth_screen .action_btn {
   width: 20%;
@@ -906,7 +947,7 @@ header .mobile_menu .burg {
 }
 .fifth_screen .title h2 {
   width: 100%;
-  margin: 60px 0 ;
+  margin: 2% 0 4% 0;
   font-size: 60px;
   text-align: center;
 }
@@ -982,7 +1023,7 @@ footer button {
 footer .contacts {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 28%;
 }
 footer .contacts a {
   margin-bottom: 20px;

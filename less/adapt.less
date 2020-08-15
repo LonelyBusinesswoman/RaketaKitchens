@@ -1,54 +1,188 @@
 //out: ../css/adapt.css
 
-// 1920 and >
-@media (min-width: 1920px) and (max-width: 2560px){
+// 1800 and >
+@media (min-width: 1800px) and (max-width: 2560px){
+    
     // title text
     .title h2{
-        font-size: 45px;
+        font-size: 48px;
+        line-height: 65px;
     }
+    .title .round{
+        margin: 18px;
+        height: 52px;
+        width: 52px;
+    }
+    // BUTTONS
+    .action_btn{
+        border-width: 3px;
+    }
+    .orange_btn{
+        padding: 28px 64px;
+        p{
+            font-size: 18px;
+        }
+    }
+    .transp_btn{
+        margin-top: 10px;
+        padding: 18px 56px;
+        p{
+            font-size: 18px;
+        }
+    }
+    // popups
+    .default_popup {
+        width: 40%;
+    }
+    // HEADER
     // nav
-    header nav{
-        width: 35%;
+    header{
+        nav{
+            width: 35%;
+        }
+        li a{
+            font-size: 16px;
+        }
+        .tour a{ 
+            font-size: 16px;
+        } 
     }
-    // h1
-    .first_screen .start h1{
-        font-size: 70px;
-        line-height: 90px;
+    // FIRST SCREEN
+    .first_screen{
+        .socials_block a {
+            margin-bottom: 70px;
+        }
+        .socials_block .fab{
+            font-size: 26px;
+        }
+        .languages_block li {
+            margin-bottom: 70px;
+        }
+        .languages_block a{
+            font-size: 18px;
+        }
+        .start .start_wrap{
+            margin-top: 14%;
+            margin-bottom: 12%;
+        }
+        // delivery text
+        .start .delivery_text{
+            font-size: 48px;
+            line-height: 59px;
+            margin-bottom: 25px;
+        }
+        // h1
+        .start h1{
+            font-size: 70px;
+            line-height: 90px;
+            margin-bottom: 80px;
+        }
     }
-    // advantages icon size
-    .second_screen .icon{
-        margin: 100px 0;
+    // SECOND SCREEN
+    .second_screen{
+        // advantages
+        .icon{
+            margin: 100px 0;
+        }
+        // advantages icon size
+         img {
+            width: 100%;
+        }
+        .adv_text{
+            padding: 40px 0;
+        }
+        .adv_text p {
+            font-size: 18px;
+        }
+        // serv block
+        .serv_text{
+            padding-top: 220px;
+            font-size: 50px;
+            line-height: 60px;
+        }
+        .descr{
+            font-size: 24px;
+            line-height: 34px;
+            padding-bottom: 200px;
+        }
     }
-    .second_screen img {
-        width: 100%;
+    // SLIDER
+    .third_screen{
+        .desktop_arrow{
+            width: 60px;
+            bottom: 18%;
+        }
+        .slider{
+            padding:  100px 0 ;
+        }
+        .slide_photo{
+            max-height: 900px;
+        }
+        .dec {
+            top: -27%;
+            width: 70px;
+        }
+        .plashka_content{
+            padding: 100px 60px 80px 60px;
+        }
+        .review, .author{
+            font-size: 30px;
+            line-height: 45px;
+        }
     }
-    // serv block
-    .second_screen .serv_text{
-        padding-top: 220px;
-        font-size: 50px;
-        line-height: 60px;
+    // FOURTH SCREEN
+    .fourth_screen{
+        .partner .partner_name{
+            font-size: 48px;
+            line-height: 57px;
+        }
+        .partner .partner_descr{
+            font-size: 20px;
+            line-height: 30px;
+        }
+         .benefit_text{
+            margin: 200px 0 150px 0;
+            margin-left: 12%;
+            font-size: 30px;
+        }
+        .benefit_descr{
+            font-size: 18px;
+            line-height: 16px;
+        }
+        .benefit_main_text{
+            font-size: 48px;
+            line-height: 57px;
+        }
     }
-    .second_screen .descr{
-        padding-bottom: 200px;
+    // FIFTH SCREEN
+    .fifth_screen{
+        .stay {
+            font-size: 16px;
+        }
+        .title h2{
+            font-size: 70px;
+        }
     }
-    // slider
-    .third_screen .slider{
-        padding:  150px 0 ;
-    }
-    .third_screen .review,  .third_screen .author {
-        font-size: 30px;
-    }
-    .third_screen .slide_photo{
-        max-height: 900px;
-    }
-    // benefits block
-    .fourth_screen .benefit_text{
-        margin: 200px 0 150px 0;
-        margin-left: 12%;
-    }
-    .fourth_screen .benefit_main_text{
-        font-size: 50px;
-        line-height: 60px;
+    // FOOTER
+    footer{
+        padding-bottom: 12%;
+        .get_in_touch{
+            width: 40%;
+        }
+        .get_in_touch span{
+            width: 90%;
+            font-size: 16px;
+            line-height: 25px;
+        }
+        .logo{
+            width: 40%;
+        }
+        form{
+            width: 100%;
+        }
+        input::placeholder{
+            font-size: 14px;
+        }
     }
 }
 // < 1400px
@@ -65,119 +199,212 @@
     .container{
         width: 90%;
     }
-    // header
-   header .logo, header .tour {
-       width: 20%;
-   }
-   header nav {
-    width: 60%;
-    margin-left: 8%;
-    margin-right: 12%;
-   }
-   header .tour img {
-    width: 170%;
-   }
-   .first_screen .socials_block, .first_screen .languages_block{
-       width: 5%;
-   }
-    //  h1
-    .first_screen .start h1{
-        width: 90%;
-        font-size: 70px;
-    }
+    // TITLE
     .title{
         align-items: flex-start;
+        .text_and_button{
+            flex-direction: column;
+        }
+        h2{
+            width: 80%;
+            font-size: 40px;
+        }
+        .action_btn{
+            margin-top: 40px;
+        }
     }
-    // title text
-    .title .text_and_button{
-        flex-direction: column;
+    // BUTTONS
+    .orange_btn{
+        padding: 24px 68px;
     }
-    .title h2{
-        width: 90%;
-        font-size: 40px;
+    .transp_btn{
+        padding: 18px 48px;
+        p{
+            font-size: 16px;
+        }
     }
-    .title .action_btn{
-        margin-top: 20px;
-    }
-    // advantages blocks
-    .second_screen .adv_text p{
-        font-size: 15px;
-        line-height: 22px;
-        letter-spacing: 3.2px;
-        margin: 0 auto;
+    // header
+   header {
+       .logo, .tour{
+        width: 20%;
+       }
+       .tour img{
+        width: 170%;
+       }
+       .tour a{
+           font-size: 16px;
+       }
+       nav{
         width: 60%;
+        margin-left: 8%;
+        margin-right: 12%;
+       }
+       li a {
+           font-size: 16px;
+       }
+   }
+    //    FIRST SCREEN
+   .first_screen{
+       .get_started_block{
+           width: 80%;
+       }
+       .socials_block, .languages_block{
+           width: 10%;
+       }
+       .fab{
+           font-size: 25px;
+       }
+       .languages_block a{
+            font-size: 16px;
+        }
+        // main block
+        .start .start_wrap{
+            margin-top: 8%;
+            margin-bottom: 6%;
+        }
+        //  h1
+        .start h1{
+            width: 90%;
+            font-size: 70px;
+        }
     }
-    .second_screen .icon{
-        margin: 80px 0;
+    // SECOND SCREEN
+    // advantages blocks
+    .second_screen{
+        .adv_text p{
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 3.2px;
+            margin: 0 auto;
+            width: 60%;
+        }
+        .icon{
+            margin: 80px 0;
+        }
+        .icon img{
+            width: 100%;
+        }
     }
+    // THIRD SCREEN
     .third_screen{
         margin-top: 35%;
+        .desktop_arrow {
+            width: 55px;
+            bottom: 5%;
+        }
+        .arrow_prev {
+            left: 18%;
+        }
+        .arrow_next {
+            left: 24%;
+        }
+        .slick-slide{
+            padding-bottom: 4%;
+        }
+        .slider{
+            background: url(../img/roundLogo.svg) 20% 20% no-repeat;
+            background-size: 88%;
+            padding: 6% 0;
+            padding-bottom: 10%;
+            .plashka_wrap{
+                width: 50%;
+                left: 2%;
+                top: 70%;
+            }
+            .plashka_content{
+                padding: 100px 40px 60px 40px;
+            }
+        }
+        .review{
+            font-size: 34px;
+            line-height: 44px;          
+        }
+        .dec {
+            position: absolute;
+            top: -20%;
+            width: 60px;
+        }
+        .dec_1{
+            left: 16%;
+        }
+        .dec_2{
+            left: 28%;
+        }
     }
-    // partners
-    .fourth_screen .partner img{
-        min-height: 400px;
-    }
-    // benefits
-    .fourth_screen .orange_line{
-        margin-top: 30%;
-    }
-    .fourth_screen .benefits_wrap{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .fourth_screen .benefit_text{
-        margin: 130px 0 40px 0;
-        margin-left: 12%;
-    }
-    .fourth_screen .benefit_main_text{
-        width: 100%;
-        font-size: 48px;
-        line-height: 57px;
-    }
-    .fourth_screen .action_btn{
-        margin-left: 12%;
-        margin-bottom: 120px;
+    // FOURTH SCREEN
+    .fourth_screen{
+        margin-top: 15%;
+        // partners
+        .partner img{
+            min-height: 400px;
+        }
+        .orange_line{
+            margin-top: 30%;
+        }
+        // benefits
+        .benefits_wrap{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .benefit_text{
+            margin: 130px 0 40px 0;
+            margin-left: 12%;
+        }
+        .benefit_main_text{
+            width: 100%;
+            font-size: 48px;
+            line-height: 57px;
+        }
+        .action_btn{
+            margin-left: 12%;
+            margin-bottom: 120px;
+            width: 30%;
+        }
     }
     // fifth
     .fifth_screen{
         margin-top: 30%;
-    }
-    .fifth_screen .title h2{
-        font-size: 78px;
-        line-height: 98px;
-        width: 60%;
-        margin: 60px auto;
+        .title h2{
+            font-size: 78px;
+            line-height: 98px;
+            width: 60%;
+            margin: 60px auto;
+        }
+        .stay{
+            font-size: 18px;
+        }
     }
     // footer
     footer{
         margin-top: 15%;
         padding-bottom: 100px;
-    }
-    footer .footer_wrap{
-        flex-direction: column;
-    }
-    footer .logo{
-        width: 50%;
-    }
-    footer .contacts {
-        margin-top: 60px;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 50%;
-    }
-    footer .contacts a{
-        margin-bottom: 0;
-        line-height: 25px;
-        color: #fff;
-    }
-    .fourth_screen .action_btn{
-        width: 30%;
-    }
-    footer .back3{
-        width: 70%;
-    }
-    footer .contacts .tel_contact{
-        font-size: 24px;
+        .footer_wrap{
+            flex-direction: column;
+        }
+        .get_in_touch{
+            width: 70%;
+            span {
+                font-family: 'AvenirNextCyr_Bold', sans-serif;
+                width: 60%;
+            }
+        }
+        .contacts {
+            margin-top: 60px;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 50%;
+            .tel_contact{
+                font-size: 24px;
+            }
+        }
+        .contacts a{
+            margin-bottom: 0;
+            line-height: 25px;
+            color: #fff;
+        }
+        .back3{
+            width: 70%;
+        }
     }
     // linies
     .second_wrap .line_6{
@@ -186,13 +413,6 @@
     .second_wrap .line_7{
         top: 48%;
     }
-    // slidr arrows
-    .desktop_arrow{
-        bottom: 0;
-    }
-    .arrow_next{
-        left: 20%;
-    }
     .second_screen .orange_line{
         margin-top: 10%;
     }
@@ -200,7 +420,11 @@
 
 //  < 1000
 @media (max-width: 1000px){
+    // header
     header{
+        .logo{
+            width: 30%;
+        }
         nav, .tour{
             display: none;
         }
@@ -208,81 +432,104 @@
             display: flex;
         }
     }
-    .first_screen .socials_block, .first_screen .languages_block{
-        display: none;
+    // FIRST SCREEN
+    .first_screen{
+        .socials_block, .languages_block{
+            display: none;
+        }
+        
     }
-    .second_screen .advantages_block{
-        grid-template-columns: 1fr;
-        grid-row-gap: 40px;
-    }
-    .second_screen .mint_back{
-        width: 25%;
-    }
-    .second_screen img{
-        width: 100%;
-    }
-    .second_screen .descr{
-        opacity: 1;
-    }
-    .second_screen .orange_line{
-        background-color: none;
-        margin: 20% 0;
-    }
-    .second_screen .service{
-        position: static;
-        width: 100%;
-        min-height: 500px;
-        max-height: 500px;
-    }
-    .fourth_screen .partners{
-        grid-template-columns: 1fr;
-        grid-row-gap: 40px;
-    }
-    .fourth_screen .partner img{
-        max-height: 350px;
-        min-height: 350px;
-    }
-    .fourth_screen .orange_line{
-        margin-top: 75%;
-    }
-    .fourth_screen .benefit_main_text{
-        font-size: 40px;
-    }
-    .third_screen .review{
-        font-size: 16px;
-    }
-    .fifth_screen{
-        margin-top: 10%;
-    }
-    .fourth_screen{
+    // SECOND SCREEN
+    .second_screen{
+        .advantages_block{
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+        }
+        .mint_back{
+            width: 25%;
+        }
+        .icon img{
+            width: 100%;
+        }
         .orange_line{
+            background-color: none;
+            margin: 20% 0;
+        }
+        .service{
+            position: static;
+            width: 100%;
+            min-height: 500px;
+            max-height: 500px;
+        }
+        .serv_text{
+            width: 50%;
+        }
+        .descr{
+            opacity: 1;
+            width: 60%;
+        }
+    }
+    // THIRD SCREEN
+    .third_screen{
+        .arrow_prev{
+            left: 12%;
+        }
+        .review{
+            font-size: 16px;
+        }
+        .slick-slide{
+            margin-bottom: 6%;
+        }
+        .dec {
+            position: absolute;
+            top: -19%;
+            width: 50px;
+        }
+        .dec_1{
+            left: 10%;
+        }
+    }
+    // FOURTH SCREEN
+    .fourth_screen{
+        .partners{
+            grid-template-columns: 1fr;
+            grid-row-gap: 40px;
+        }
+        .partner img{
+            max-height: 350px;
+            min-height: 350px;
+        }
+        .orange_line{
+            margin-top: 75%;
             flex-direction: column;
             background-color: inherit;
         }
-    }
-    .fourth_screen .absolute_line_block{
-        width: 100%;
-        position: static;
-    }
-
-    .fifth_screen .title h2{
-        font-size: 55px;
-        line-height: 80px;
-    }
-    footer .get_in_touch{
-        width: 100%;
-        form{
+        .absolute_line_block{
             width: 100%;
+            position: static;
+        }
+        .benefit_main_text{
+            font-size: 40px;
         }
     }
-    footer .contacts{
-        width: 80%;
+    // FIFTH SCREEN
+    .fifth_screen{
+        margin-top: 10%;
+        .title h2{
+            font-size: 55px;
+            line-height: 80px;
+        }
     }
-    .second_screen .serv_text{
-        width: 50%;
-    }
-    .second_screen .descr{
-        width: 60%;
+    footer{
+        .get_in_touch{
+            width: 100%;
+            form{
+                width: 100%;
+            }
+        }
+        .contacts{
+            width: 80%;
+        }
     }
 }
 //  < 760
@@ -296,50 +543,146 @@
         display: flex;
         flex-direction: column;
     }
-    header .logo{
-        width: 40%;
+    // TITLE
+    .title{
+        width: 90%;
     }
-    .first_screen .welcome_block{
-        display: none;
+    .title h2{
+        width: 92%;
+        font-size: 42px;
+        line-height: 65px;
     }
-    .first_screen .start {
-        width: 100%;
+    .title .round{
+        margin: 20px;
+        height: 56px;
+        width: 56px;
     }
-    .third_screen .slider{
-        width: 100%;
+    // HEADER
+    header{
+        width: 90%;
+        .logo{
+            width: 40%;
+        }
     }
-    .third_screen .plashka_wrap {
-        width: 70%;
-        padding: 30px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        top: 80%;
+    // FIRST SCREEN
+    .first_screen{
+        .get_started_block {
+            width: 90%;
+            .start_wrap {
+                margin-top: 16%;
+                margin-bottom: 14%;
+            }
+            .start .delivery_text {
+                font-size: 48px;
+                line-height: 59px;
+            }
+            .start h1{
+                font-size: 72px;
+                line-height: 98px;
+            }
+        }
+        .welcome_block{
+            display: none;
+        }
+        .start {
+            width: 100%;
+        }
     }
-    .slick-slide{
-        padding: 100px 0;
+    // SECOND SCREEN
+    .second_screen{
+        .orange_line{
+            margin: 0%;
+            margin-top: 30%;
+        }
+        .service {
+            min-height: 450px;
+            max-height: 450px;
+        }
+        .serv_text {
+            width: 50%;
+            font-size: 48px;
+            line-height: 56px;
+            padding-top: 100px;
+        }
+        .round::after {
+            height: 300vh;
+        }
     }
-    .fourth_screen .action_btn{
-        width: 40%;
+    // THIRD SCREEN
+    .third_screen{
+        .round::before {
+            height: 160vh;
+        }
+        .round::after {
+            height: 160vh;
+        }
+        .slick-slide{
+            padding: 100px 0;
+        }
+        .desktop_arrow {
+            bottom: 0%;
+        }
+        .slider{
+            width: 100%;
+            background: url(../img/roundLogo.svg) -400% 19% no-repeat; 
+            background-size: 95%;
+            .plashka_wrap {
+                width: 90%;
+                padding: 30px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                top: 95%;
+            }
+            .plashka_content{
+                padding: 80px 40px 60px 40px;
+            }
+            .review {
+                font-size: 32px;
+                line-height: 44px;
+            }
+        }
     }
-    .third_screen .slider {
-        background: url(../img/roundLogo.svg) -15% 60% no-repeat; 
-        background-size: 65%;
+    // FOURTH SCREEN
+    .fourth_screen{
+        .round::before {
+            height: 160vh;
+        }
+        .action_btn{
+            width: 40%;
+        }
+        .orange_line{
+            margin-top: 95%;
+        }
+        .benefit_main_text{
+            font-size: 30px;
+            line-height: 35px;
+        }
+        .partner .partner_name {
+            font-size: 48px;
+            line-height: 57px;
+        }
     }
-    .fourth_screen .orange_line{
-        margin-top: 95%;
-    }
-    .fourth_screen .benefit_main_text{
-        font-size: 30px;
-        line-height: 35px;
-    }
-    .second_screen .orange_line{
-        margin: 30% 0;
+    footer .get_in_touch span {
+        font-size: 14px;
+        width: 90%;
     }
 }
 // < 650
 @media (max-width: 650px){
+    .third_screen {
+        margin-top: 45%;
+    }
+    .third_screen .slide_photo{
+        width: 100%;
+    }
+    .third_screen .plashka_wrap {
+        width: 90%;
+    }
+    .fourth_screen .action_btn {
+        width: 60%;
+    }
     .fourth_screen .benefit_text {
         margin: 70px 0 30px 0;
         margin-left: 12%;
@@ -351,19 +694,34 @@
     .slick-slide {
         padding: 140px 0;
     }
-    .third_screen .slide_photo{
-        width: 100%;
-    }
-    .third_screen .plashka_wrap {
-        width: 90%;
-    }
 }
 
 // mobile full 
 @media (max-width: 550px){
+    
     .title{
-        flex-direction: column;
+        width: 98%;
+        // ROUND DECORATIVE ELEMENT
+        .circle{
+            border-width: 3px;
+        }
+        .round{
+            margin: 10px;
+            height: 38px;
+            width: 38px;
+            border-width: 3px;
+        }
+        .text_and_button{
+            margin-top: 40px;
+            margin-left: 5px;
+        }
+        h2{
+            font-size: 28px;
+            line-height: 35px;
+        }
     }
+
+    // POPUP 
     .default_popup{
         width: 95%;
         .send_btn {
@@ -371,122 +729,267 @@
             margin-top: 20px;
         }
     }
-    .first_screen .start .start_wrap {
-        margin-bottom: 20%;
-    }
-    header .logo{
-        width: 60%;
-    }
-    .first_screen .start .delivery_text {
-        font-size: 24px;
-    }
-    .get_started_block{
-        width: 100%;
-    }
-    .first_screen .start h1{
-        font-size: 40px;
-        line-height: 55px;
-    }
-    .title {
-        width: 90%;
-        h2{
-            width: 100%;
-            font-size: 32px;
+    // BUTTONS
+    .orange_btn{
+        padding: 17px 29px;
+        p{
+            font-size: 16px;
+            line-height: 24px;
         }
     }
-    .second_screen .icon {
-        margin: 50px 0;
+    .transp_btn{
+        padding: 10px 22px;
+        p{
+            font-size: 12px;
+            line-height: 24px;
+        }
     }
-    .fifth_screen .title h2{
-        font-size: 25px;
-        line-height: 30px;
-        width: 80%;
+    // HEADER
+    header{
+        margin-top: 20px;
+        .logo{
+            width: 70%;
+        }
     }
-    .second_screen .adv_text p{
-        font-size: 12px;
-        width: 85%;
+    // FIRST SCREEN
+    .first_screen{
+        margin-top: 25px;
+        .start{
+            .start_wrap {
+                margin-bottom: 25%;
+            }
+        }
+        .get_started_block{
+            width: 100%;
+            .start{
+                h1{
+                    font-size: 36px;
+                    line-height: 45px;
+                    margin-bottom: 25px;
+                }
+                .delivery_text{
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+        }
     }
-    .title .text_and_button {
-        width: 100%;
-        margin-left: 10px;
-        font-size: 30px;
+    // SECOND SCREEN 
+    .second_screen{
+        // back
+        .mint_back {
+            width: 64%;
+            right: -25%;
+            top: 8%;
+        }
+        // advantages
+        .advantages_block{
+            margin-top: 50px;
+            grid-row-gap: 15px;
+        }
+        .icon {
+            margin: 30px 0;
+            img {
+                width: 80%;
+            }
+        }
+        .adv_text {
+            padding: 20px 0;
+            p{
+                font-size: 12px;
+                width: 80%;
+                line-height: 15px;
+                letter-spacing: 2px;
+            }
+        }
+        // service
+        .orange_line {
+            margin-top: 35%;
+        }
+        .service {
+            min-height: 280px;
+            max-height: 280px;
+        }
+        .serv_text {
+            width: 60%;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -0.01em;
+            margin-left: 5%;
+            padding-top: 60px;
+        }
+        .descr {
+            width: 90%;
+            font-size: 16px;
+            line-height: 25px;   
+            margin-left: 5%;
+        }   
+        .round::after {
+            height: 180vh;
+        }
     }
-    .fourth_screen .partner img {
-        max-height: 200px;
-        min-height: 200px;
+    // THIRD SCREEN
+    .third_screen {
+        margin-top: 60%;
+        // round
+        
+         .title .circle{
+            border-color:#403e3D;
+        }
+        .round::before{
+            background-color: #403e3D;
+        }
+        .round::after{
+            background-color: #403e3D;
+            height: 60vh;
+        }
+        // slide
+        .slick-slide {
+            padding: 20px 0;
+            padding-bottom: 140px;
+        }
+        
+        .slider{
+            background-image: unset;
+            .desktop_arrow {
+                bottom: 5%;
+            }
+            .arrow_next {
+                right: 30%;
+                left: unset;
+            }
+            .arrow_prev {
+                left: 30%;
+            }
+            .dec {
+                top: -20%;
+                width: 30px;
+            }
+            .dec_1 {
+                left: 63%;
+            }
+            .dec_2 {
+                left: 75%;
+            }
+            .plashka_wrap {
+                padding: 20px;
+            }
+            .plashka_content {
+                padding: 30px 15px;
+                align-items: flex-start;
+            }
+            .slide_photo {
+                max-height: 400px;
+            }
+            .review {
+                text-align: left;
+                width: 100%;
+                font-size: 16px;
+                line-height: 25px;
+            }
+            .author{
+                font-size: 18px;
+                line-height: 22px;
+                text-align: right;
+                letter-spacing: -0.01em;
+            }
+        }
     }
-    .fourth_screen .partner .partner_name {
-        font-size: 26px;
+    // FOURTH SCREEN
+    .fourth_screen{
+        .partners {
+            grid-row-gap: 15px;
+             margin-top: 30px; 
+        }
+        .partner .partner_name {
+            font-size: 28px;
+            line-height: 45px;
+            letter-spacing: -0.01em;
+            margin-bottom: 10px;
+        }
+        .partner img {
+            max-height: 180px;
+            min-height: 180px;
+        }
+        .partner .partner_descr{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .action_btn {
+            width: 65%;
+            margin-left: 6%;
+            margin-bottom: 80px;
+        }
+        .orange_line {
+            margin-top: 115%;
+        }
+        .benefit_text {
+            margin: 50px 0 30px 0;
+            margin-left: 6%;
+            width: 80%;
+        }
+        .benefit_descr{
+            font-size: 13px;
+            line-height: 18px; 
+            letter-spacing: 3.2px;
+        }
+        .benefit_main_text {
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -0.01em;
+        }
     }
-    .fourth_screen .partner .partner_text {
-        width: 75%;
+    // FIFTH SCREEN
+    .fifth_screen{
+        margin-top: 70px;
+        .title h2{
+            font-size: 40px;
+            line-height: 45px;
+            width: 95%;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+        .stay{
+            font-size: 13px;
+            line-height: 18px;
+        }
     }
-    footer .footer_wrap {
-        width: 90%;
+    // FOOTER
+    footer{
+        margin-top: 30%;
+        padding-bottom: 40px;
+        .back3 {
+            width: 100%;
+        }
+        .logo{
+            width: 65%;
+        }
+        .footer_wrap {
+            width: 90%;
+        }
+        .get_in_touch span {
+            padding: 20px 0;
+        }
+        .contacts {
+            flex-direction: column;
+            margin-top: 35px;
+         }
+         .contacts .tel_contact{
+            margin-bottom: 20px;
+            font-size: 26px;
+            line-height: 25px;
+        }
+        input::placeholder{
+            font-size: 15px;
+        }
+        button {
+            font-size: 16px
+        }
     }
-    footer .contacts {
-       flex-direction: column;
-    }
-    footer .contacts .tel_contact{
-        margin-bottom: 20px;
-    }
-    .second_screen .service {
-        position: static;
-        width: 100%;
-        min-height: 300px;
-        max-height: 300px;
-    }
+
     .absolute_main_text {
         width: 60%;
         font-size: 20px;
         line-height: 30px;
-    }
-    .second_screen .serv_text{
-        padding-top: 20px;
-    }
-    .second_screen .descr {
-        width: 80%;
-    }
-    .fourth_screen .benefit_text {
-        margin: 30px 0 30px 0;
-        margin-left: 12%;
-        width: 80%;
-    }
-    .fourth_screen .benefit_main_text {
-        font-size: 24px;
-        line-height: 30px;
-    }
-    .fourth_screen .action_btn {
-        width: 80%;
-    }
-    .fourth_screen .orange_line {
-        margin-top: 115%;
-    }
-    .arrow_next {
-        right: 30%;
-        left: unset;
-    }
-    .arrow_prev {
-        left: 30%;
-    }
-    .third_screen .plashka_content {
-        padding: 10px
-    }
-    .third_screen .review {
-        width: 71%;
-        line-height: 30px;
-        font-size: 14px;
-    }
-    .third_screen .plashka_wrap {
-        padding: 20px;
-    }
-    .third_screen .review {
-        width: 100%;
-    }
-    .third_screen .slide_photo {
-        max-height: 400px;
-    }
-    .fourth_screen .absolute_line_block {
-        min-height: 350px;
     }
 }
