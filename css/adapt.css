@@ -150,6 +150,27 @@
   footer form {
     width: 100%;
   }
+  footer input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  footer input::-moz-placeholder {
+    font-size: 14px;
+  }
+  footer input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  footer input::-ms-input-placeholder {
+    font-size: 14px;
+  }
+  footer input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  footer input::-moz-placeholder {
+    font-size: 14px;
+  }
+  footer input:-ms-input-placeholder {
+    font-size: 14px;
+  }
   footer input::placeholder {
     font-size: 14px;
   }
@@ -167,10 +188,15 @@
     width: 90%;
   }
   .title {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .title .text_and_button {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .title h2 {
     width: 80%;
@@ -295,8 +321,13 @@
     margin-top: 30%;
   }
   .fourth_screen .benefits_wrap {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .fourth_screen .benefit_text {
     margin: 130px 0 40px 0;
@@ -329,7 +360,10 @@
     padding-bottom: 100px;
   }
   footer .footer_wrap {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer .get_in_touch {
     width: 70%;
@@ -340,8 +374,13 @@
   }
   footer .contacts {
     margin-top: 60px;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 50%;
   }
   footer .contacts .tel_contact {
@@ -374,6 +413,8 @@
     display: none;
   }
   header .mobile_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .first_screen .socials_block,
@@ -381,7 +422,8 @@
     display: none;
   }
   .second_screen .advantages_block {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-row-gap: 40px;
   }
   .second_screen .mint_back {
@@ -425,7 +467,8 @@
     left: 10%;
   }
   .fourth_screen .partners {
-    grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     grid-row-gap: 40px;
   }
   .fourth_screen .partner img {
@@ -434,7 +477,10 @@
   }
   .fourth_screen .orange_line {
     margin-top: 75%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: inherit;
   }
   .fourth_screen .absolute_line_block {
@@ -467,8 +513,13 @@
   }
   .default_popup .start_popup_wrap {
     padding: 30px 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .title {
     width: 90%;
@@ -759,7 +810,9 @@
   }
   .third_screen .slider .plashka_content {
     padding: 30px 15px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .third_screen .slider .slide_photo {
     max-height: 400px;
@@ -855,13 +908,37 @@
     padding: 20px 0;
   }
   footer .contacts {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 35px;
   }
   footer .contacts .tel_contact {
     margin-bottom: 20px;
     font-size: 26px;
     line-height: 25px;
+  }
+  footer input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  footer input::-moz-placeholder {
+    font-size: 15px;
+  }
+  footer input:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  footer input::-ms-input-placeholder {
+    font-size: 15px;
+  }
+  footer input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+  footer input::-moz-placeholder {
+    font-size: 15px;
+  }
+  footer input:-ms-input-placeholder {
+    font-size: 15px;
   }
   footer input::placeholder {
     font-size: 15px;

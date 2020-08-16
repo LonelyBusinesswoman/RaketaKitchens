@@ -46,16 +46,27 @@ jQuery(document).ready(function($) {
     //   popups
       $('.get_start_popup').magnificPopup({
         type:'inline',
-        closeBtnInside: true
+        closeOnBgClick:false,
+        showCloseBtn: false,
+        closeBtnInside: false
       });
       $('.view_3d_tour_popup').magnificPopup({
         type:'inline',
-        closeBtnInside: true
+        closeOnBgClick:false,
+        showCloseBtn: false,
+        closeBtnInside: false
       });
       $('.show_map_popup').magnificPopup({
         type:'inline',
-        closeBtnInside: true,
+        closeOnBgClick:false,
+        showCloseBtn: false,
+        closeBtnInside: false
       });
+      // close
+      $('.my-custom-close').click(function(){
+        //This will close popup dialog opened using $.magnificPopup.open()
+        $.magnificPopup.close();
+        });
       // input attach files 
       var inputs = document.querySelectorAll( '.inputfile' );
       Array.prototype.forEach.call( inputs, function( input )
