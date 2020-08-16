@@ -586,6 +586,20 @@ header{
         cursor: pointer;
         line-height: 1;
     }
+    .tour{
+        width: 100%;
+        margin-top: 30px;
+        a{
+            cursor: pointer;
+            z-index: 2;
+            .Demi();
+            font-size: 16px;
+            line-height: 18px;
+            color:@orange;
+            letter-spacing: 3.0px;
+            text-transform: uppercase;
+        }
+    }
 }
 .active{
     right: 0%;
@@ -815,11 +829,14 @@ header{
         background-size: 65%;
         padding: 65px 0;
     }
+    .title .circle{
+        border-color:#403e3D;
+    }
     .round::after{
         content: '';
         position: absolute;
         width: 2px;
-        background-color: #333030;
+        background-color: #403e3D;
         height: 60vh;
         top: 20px;
         z-index: -1;
@@ -828,7 +845,7 @@ header{
         content: '';
         position: absolute;
         width: 2px;
-        background-color: #333030;
+        background-color: #403e3D;
         height: 120vh;
         bottom: 20px;
         z-index: -1;

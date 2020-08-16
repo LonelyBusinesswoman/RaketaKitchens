@@ -542,6 +542,20 @@ header .mobile_menu .burg:last-child {
   cursor: pointer;
   line-height: 1;
 }
+.mobile .tour {
+  width: 100%;
+  margin-top: 30px;
+}
+.mobile .tour a {
+  cursor: pointer;
+  z-index: 2;
+  font-family: 'AvenirNextCyr_Demi', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #EB673F;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
 .active {
   right: 0%;
 }
@@ -761,11 +775,14 @@ header .mobile_menu .burg:last-child {
   background-size: 65%;
   padding: 65px 0;
 }
+.third_screen .title .circle {
+  border-color: #403e3D;
+}
 .third_screen .round::after {
   content: '';
   position: absolute;
   width: 2px;
-  background-color: #333030;
+  background-color: #403e3D;
   height: 60vh;
   top: 20px;
   z-index: -1;
@@ -774,7 +791,7 @@ header .mobile_menu .burg:last-child {
   content: '';
   position: absolute;
   width: 2px;
-  background-color: #333030;
+  background-color: #403e3D;
   height: 120vh;
   bottom: 20px;
   z-index: -1;
